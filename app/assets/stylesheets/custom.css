@@ -1,0 +1,45 @@
+body {
+	max-width: 1080px;
+	margin: 0 auto !important;
+	float: none !important;
+	margin-top: -15px;
+}
+
+.contacts-background {
+	background-color: white;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+#contact-us-pic {
+	background: url("/assets/desk.png") no-repeat center center fixed;
+	background-size: cover;
+}
+.contact-us {
+	list-style-type: none;
+	float: left;
+	height: 100%;
+	width: 100%;
+	padding-top: 75px;
+}
+.contact-us-item {
+	height: 1200x;
+	width: 200px;
+	padding: 50px;
+	float: left;
+	height: 80%;
+	width: 50%;
+}
+h1 {
+	display: inline;
+}
+h4 {
+	display: inline;
+}
+.contacts-bottom {
+	background-color: white;
+	width: 100%;
+	min-height: 15px;
+	margin-bottom: 0px;
+}

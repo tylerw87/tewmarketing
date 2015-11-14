@@ -5,9 +5,43 @@
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
+
+  <!--Navbar-->
+          <title>Blur Menu with CSS3 Transitions</title>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+        <meta name="description" content="Blur Menu with CSS3 Transitions" />
+        <meta name="keywords" content="css3, transitions, menu, blur, navigation, typography, font, letters, text-shadow" />
+        <meta name="author" content="Codrops" />
+        <link rel="shortcut icon" href="../favicon.ico"> 
+        <link rel="stylesheet" type="text/css" href="css/demo.css" />
+        <link rel="stylesheet" type="text/css" href="css/style1.css" />
+		<!--[if IE]>
+			<link rel="stylesheet" type="text/css" href="css/styleIE.css" />
+		<![endif]-->
+        <link href='http://fonts.googleapis.com/css?family=Josefin+Slab' rel='stylesheet' type='text/css' />
 </head>
 <body>
-
+        <div class="container">
+            <div class="content">
+                <ul class="bmenu">
+                    <li>
+                    	<%= link_to "Home", root_path %>
+                    </li>
+                    <li>
+                    	<%= link_to "About Us", :controller => "pages", :action => "about" %>
+                    </li>
+                    <li>
+                    	<%= link_to "Services", :controller => "pages", :action => "services" %>
+                    </li>
+                    <li>
+                    	<%= link_to "Contact Us", new_contact_path %>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js"></script>
 <div>
 <% flash.each do |key, value| %>
   <%= content_tag :div, value, class: "alert alert-#{key}" %>
@@ -15,6 +49,5 @@
 
 <%= yield %>
 </div>
-
 </body>
 </html>
