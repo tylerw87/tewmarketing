@@ -7,28 +7,28 @@
       <li class="contact-us-item"> 
         <div>
         <h2>At TEW Marketing,</h2>
-        <p><h4>we know that no one works harder than a business owner. In addition, every day there are <i>thousands</i> of new businesses looking to edge you out of the market. </h4><h3> Don't worry,</h3><h4> it's our job to move you to the front. While working with us, you will be allowed to focus on channeling your energies behind your passion, <i>your company,</i> and let us handle the rest.</h4>
+        <p>we know that no one works harder than a business owner. In addition, every day there are <i>thousands</i> of new businesses looking to edge you out of the market. Don't worry, it's our job to move you to the front. While working with us, you will be allowed to focus on channeling your energies behind your passion, <i>your company,</i> and let us handle the rest.
         </div>
         </li>             
         <li class="contact-us-item">
-                              <div class="well"> Please let us know how we can help you.
-                                <%= form_for @contact do |f| %>
-                                  <div class="form-group">
-                                    <%= f.label :name %>
-                                    <%= f.text_field :name, class: 'form-control' %>
-                                  </div>
-                                  <div class="form-group">
-                                    <%= f.label :email %>
-                                    <%= f.email_field :email, class: 'form-control' %>
-                                  </div>
-                                  <div class="form-group">
-                                    <%= f.label :comments %>
-                                    <%= f.text_area :comments, class: 'form-control' %>
-                                  </div>
-                                  <%= f.submit 'Submit', class: 'btn btn-default' %>
-                                <% end %>
-                              </div>
-                        </li>
+            <div class="well"> Please let us know how we can help you.
+              <%= form_for @contact do |f| %>
+                <div class="form-group">
+                  <%= f.label :name %>
+                  <%= f.text_field :name, class: 'form-control' %>
+                </div>
+                <div class="form-group">
+                  <%= f.label :email %>
+                  <%= f.email_field :email, class: 'form-control' %>
+                </div>
+                <div class="form-group">
+                  <%= f.label :comments %>
+                  <%= f.text_area :comments, class: 'form-control' %>
+                </div>
+                <%= f.submit 'Submit', class: 'btn btn-default' %>
+              <% end %>
+            </div>
+        </li>
     </ul>
     <div class="contacts-bottom">
 

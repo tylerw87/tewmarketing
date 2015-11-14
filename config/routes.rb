@@ -6,6 +6,7 @@ Rails.application.routes.draw do
   get 'pages/portfolio'
 
   root 'pages#home'
+  
   resources :contacts
 
   # The priority is based upon order of creation: first created -> highest priority.
