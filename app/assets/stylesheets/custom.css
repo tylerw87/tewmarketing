@@ -1,3 +1,6 @@
+@import "bootstrap-sprockets";
+@import "bootstrap";
+
 body {
 	max-width: 1080px;
 	margin: 0 auto !important;
