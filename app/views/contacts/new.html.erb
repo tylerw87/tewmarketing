@@ -14,16 +14,22 @@
             <div class="well"> Please let us know how we can help you.
               <%= form_for @contact do |f| %>
                 <div class="form-group">
-                  <%= f.label :name %>
-                  <%= f.text_field :name, class: 'form-control' %>
+                  <%= f.text_field :name, :placeholder => "name", class: 'form-control' %>
+                </div>
+                <div class="bar">
+                  <i></i>
                 </div>
                 <div class="form-group">
-                  <%= f.label :email %>
-                  <%= f.email_field :email, class: 'form-control' %>
+                  <%= f.email_field :email, :placeholder => "email", class: 'form-control' %>
+                </div>
+                <div class="bar">
+                  <i></i>
                 </div>
                 <div class="form-group">
-                  <%= f.label :comments %>
-                  <%= f.text_area :comments, class: 'form-control' %>
+                  <%= f.text_area :comments, :placeholder => "comments", class: 'form-control', id: "comments" %>
+                </div>
+                <div class="bar">
+                  <i></i>
                 </div>
                 <%= f.submit 'Submit', class: 'btn btn-default' %>
               <% end %>

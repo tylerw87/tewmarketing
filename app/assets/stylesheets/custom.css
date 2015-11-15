@@ -26,17 +26,63 @@ body {
 	width: 100%;
 	padding-top: 75px;
 }
-.contact-us-item {
-	height: 1200x;
-	width: 200px;
-	padding: 50px;
-	float: left;
-	height: 80%;
-	width: 50%;
-}
 .contacts-bottom {
 	background-color: white;
 	width: 100%;
 	min-height: 15px;
 	margin-bottom: 0px;
+}
+/*Form*/
+.well {
+	width:250px;
+	height: auto;
+	margin: auto;
+	margin-top: 10%;
+}
+.well .form-control {
+	border: none;
+	background: transparent;
+  font-family:Lato ;
+  font-weight:700 ;
+	display: block;
+	height: 20px;
+	outline: none;
+	width: calc(100% - 24px) ;
+	margin: auto;
+	padding: 6px 12px 6px 12px;
+	font-size: 15px;
+}
+.bar {
+	width: 100%;
+	height: 10px;
+	background: transparent ;
+}
+.bar i {
+	width: 95%;
+	margin: auto;
+	height: 1px ;
+	display: block;
+	background: #d1d1d1;
+}
+.well .form-control {
+	border-radius: 5px;
+	border: 1px solid white;
+}
+#comments {
+	height: 50px;
+}
+.well .btn {
+	width: 100%;
+	border-radius: 7px;
+	background: white;
+	text-decoration: center;
+	border: none;
+	color: black;
+  margin-top:-5px;
+	padding-top: 14px;
+	padding-bottom: 14px;
+	outline: none;
+	font-size: 13px;	
+	border-bottom: 3px solid gray;
+	cursor: pointer;
 }
