@@ -33,6 +33,8 @@ gem 'spring',        group: :development
 gem 'bootstrap-sass', '~> 3.3.1.0'
 gem 'autoprefixer-rails'
 
+gem 'font-awesome-sass', '~> 4.4.0'
+
 # Use Unicorn as the app server
 # gem 'unicorn'
 

@@ -4,7 +4,6 @@
 body {
 	max-width: 1080px;
 	margin: 0 auto !important;
-	float: none !important;
 	margin-top: -15px;
 }
 
@@ -20,24 +19,42 @@ body {
 	background-size: cover;
 }
 .contact-us {
+	min-height: 700px;
 	list-style-type: none;
-	float: left;
 	height: 100%;
 	width: 100%;
 	padding-top: 75px;
+	margin: 0px 0px;
+	-webkit-columns: 2 350px;
+	-moz-columns: 2 350px;
+	columns: 2 350px;
+	-webkit-column-gap: 2em;
+	-moz-column-gap: 2em;
+	column-gap: 2em;
 }
-.contacts-bottom {
+.footer {
+	position: fixed;
 	background-color: white;
 	width: 100%;
-	min-height: 15px;
-	margin-bottom: 0px;
+	height: 30px;
+	bottom: 0;
+	margin: 0 auto;
+}
+.contact-us-item {
+	width: 300px;
+	float: left;
+	display: inline;
 }
 /*Form*/
 .well {
-	width:250px;
+	padding-top: 100px;
+	width: 300px;
 	height: auto;
 	margin: auto;
 	margin-top: 10%;
+	float: right;
+	font-family: 'Yanone Kaffeesatz', sans-serif;
+	font-size: 22px;
 }
 .well .form-control {
 	border: none;
@@ -69,7 +86,7 @@ body {
 	border: 1px solid white;
 }
 #comments {
-	height: 50px;
+	height: 100px;
 }
 .well .btn {
 	width: 100%;
@@ -78,11 +95,20 @@ body {
 	text-decoration: center;
 	border: none;
 	color: black;
-  margin-top:-5px;
-	padding-top: 14px;
-	padding-bottom: 14px;
+	font-family: 'Yanone Kaffeesatz', sans-serif;
+	margin-top:-5px;
+	padding-top: 10px;
+	padding-bottom: 10px;
 	outline: none;
-	font-size: 13px;	
+	font-size: 22px;	
 	border-bottom: 3px solid gray;
 	cursor: pointer;
 }
+.btn:hover {
+	background-color: #85cbff;
+}
+.form-control:hover {
+	border: 1px solid #85cbff;
+}
+/*End Form*/
+
