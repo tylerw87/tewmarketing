@@ -2,43 +2,58 @@
 <head>
   <link type="text/css" href="custom.css" rel="stylesheet">
   <link href='https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz' rel='stylesheet' type='text/css'>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   </head>
-<body class="contacts-background">
-    <ul class="contact-us" id="contact-us-pic">
-      <li class="contact-us-item"> 
-        <div>
-        <p><h2>Every day there are <i>thousands</i> of new businesses looking to edge you out of the market.</h2>
-        <h2> Don't worry, it's our job to move you to the front. While working with us, you will be allowed to focus on channeling your energies behind your passion, <i>your company,</i> and let us handle the rest.</h2>
+<body class="contacts-background" id="responsive">
+    <div class="contact-us">
+      <div class="left"> 
+        <h1>Every day, there are hundreds of new businesses looking to edge you out of the market. <span style="color: #9A3334">Don't worry, it's our job to move you to the front.</span> While working with us, you will be allowed to focus on channeling your energies behind your passion, <span style="color: #9A3334">your business, </span>and let us handle the rest. Please fill out the form to the right and let us know how we can help!</h1>
+      </div>
+      <div class="right">
+          <div class="well"> 
+            <img src="/assets/TEW-YOU.png" class="contact-image">
+            <%= form_for @contact do |f| %>
+              <div class="form-group">
+                <%= f.text_field :name, :placeholder => "name", class: 'form-control' %>
+              </div>
+              <div class="bar">
+                <i></i>
+              </div>
+              <div class="form-group">
+                <%= f.email_field :email, :placeholder => "email", class: 'form-control' %>
+              </div>
+              <div class="bar">
+                <i></i>
+              </div>
+              <div class="form-group">
+                <%= f.text_area :comments, :placeholder => "comments", class: 'form-control', id: "comments" %>
+              </div>
+              <div class="bar">
+                <i></i>
+              </div>
+              <%= f.submit 'Submit', class: 'btn btn-default' %>
+            <% end %>
+          </div>
         </div>
-        </li>             
-        <li class="contact-us-item">
-            <div class="well"> Please let us know how we can help you!
-              <%= form_for @contact do |f| %>
-                <div class="form-group">
-                  <%= f.text_field :name, :placeholder => "name", class: 'form-control' %>
-                </div>
-                <div class="bar">
-                  <i></i>
-                </div>
-                <div class="form-group">
-                  <%= f.email_field :email, :placeholder => "email", class: 'form-control' %>
-                </div>
-                <div class="bar">
-                  <i></i>
-                </div>
-                <div class="form-group">
-                  <%= f.text_area :comments, :placeholder => "comments", class: 'form-control', id: "comments" %>
-                </div>
-                <div class="bar">
-                  <i></i>
-                </div>
-                <%= f.submit 'Submit', class: 'btn btn-default' %>
-              <% end %>
-            </div>
+    </div>
+    <div class="sidebar">
+      <ul class="ul-sidebar">
+        <li class="sidebar-items">
+          <i class="fa fa-facebook-square fa-lg"></i>
         </li>
-    </ul>
+        <li class="sidebar-items">
+          <i class="fa fa-twitter fa-lg"></i>
+        </li>
+        <li class="sidebar-items">
+          <i class="fa fa-instagram fa-lg"></i>
+        </li>
+        <li class="sidebar-items">
+          <i class="fa fa-google-plus fa-lg"></i>
+        </li>
+      </ul>
+    </div>
     <div class="footer">
-
+      <i class= "fa fa-copyright"></i> Copyright 2015 TEW Marketing.
     </div>
     </body>
 </html>

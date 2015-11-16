@@ -5,6 +5,7 @@ body {
 	max-width: 1080px;
 	margin: 0 auto !important;
 	margin-top: -15px;
+	font-size: 100%;
 }
 
 .contacts-background {
@@ -13,54 +14,62 @@ body {
 	-moz-background-size: cover;
 	-o-background-size: cover;
 	background-size: cover;
-}
-#contact-us-pic {
-	background: url("/assets/desk.png") no-repeat center center fixed;
-	background-size: cover;
+	background: url("/assets/desk.png") no-repeat top transparent;
+	background-size: 100% 100%;
 }
 .contact-us {
-	min-height: 700px;
 	list-style-type: none;
 	height: 100%;
 	width: 100%;
-	padding-top: 75px;
+	padding-top: 0px;
 	margin: 0px 0px;
-	-webkit-columns: 2 350px;
-	-moz-columns: 2 350px;
-	columns: 2 350px;
-	-webkit-column-gap: 2em;
-	-moz-column-gap: 2em;
-	column-gap: 2em;
 }
-.footer {
-	position: fixed;
-	background-color: white;
-	width: 100%;
-	height: 30px;
-	bottom: 0;
-	margin: 0 auto;
-}
-.contact-us-item {
-	width: 300px;
+.left {
+	width: 40%;
 	float: left;
-	display: inline;
+	margin-top: 150px;
+	text-align: center;
+	font-family: 'Yanone Kaffeesatz', sans-serif;
+	color: #3399FF;
+	font-size: 1.5em;
+	line-height: 1.8em;
+	text-shadow: 0 -4px 3px rgba(255, 255, 255, 0.3), 0 3px 4px rgba(0, 0, 0, 0.2);
+}
+.right {
+	width: 60%;
+	float: left
+}
+@media screen and (max-width: 60em){
+	.left{
+		font-size: 90%;
+	}
+}
+@media screen and (max-width: 35em){
+	.left{
+		font-size: 60%;
+	}
+}
+/*Image*/
+.contact-image {
+	max-width: 100%;
+	clear: both;
 }
 /*Form*/
 .well {
-	padding-top: 100px;
-	width: 300px;
+	padding-top: 0px;
+	width: 65%;
 	height: auto;
 	margin: auto;
 	margin-top: 10%;
-	float: right;
+	margin-bottom: 10%;
 	font-family: 'Yanone Kaffeesatz', sans-serif;
 	font-size: 22px;
 }
 .well .form-control {
 	border: none;
 	background: transparent;
-  font-family:Lato ;
-  font-weight:700 ;
+  	font-family:Lato ;
+  	font-weight:700 ;
 	display: block;
 	height: 20px;
 	outline: none;
@@ -105,10 +114,42 @@ body {
 	cursor: pointer;
 }
 .btn:hover {
-	background-color: #85cbff;
+	background-color: #3399FF;
 }
 .form-control:hover {
-	border: 1px solid #85cbff;
+	border: 1px solid #3399FF;
 }
 /*End Form*/
+/*Sidebar*/
+.sidebar {
+	position:fixed;
+	background: repeating-linear-gradient(45deg, white, white 1px, #F3EFE0 1px, #F3EFE0 2px);
+	height: 100%;
+	width: 30px;
+	right: 0;
+}
+.ul-sidebar {
+	list-style-type: none;
+	margin-left: -35px;
+	float: left;
+	margin-top: 0px;
+}
+.sidebar-items {
+	float: left;
+	margin-top: 5px;
 
+}
+.fa:hover {
+	color: #3399FF;
+}
+/*Footer*/
+.footer {
+	position: fixed;
+	background: repeating-linear-gradient(45deg, white, white 1px, #F3EFE0 1px, #F3EFE0 2px);
+	width: 100%;
+	height: 20px;
+	bottom: 0;
+	margin: 0 auto;
+	font-size: 10px;
+}
+/*End Footer*/
