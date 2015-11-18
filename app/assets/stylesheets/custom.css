@@ -167,9 +167,13 @@ body {
 }
 /*End Footer*/
 
-/*Homepage*/
-.home .bmenu{
+/*---------------------------Homepage----------------------------*/
+.home .bmenu {
 	display: none;
+	max-width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+
 }
 .homepic {
 	height: 400px;
@@ -188,14 +192,21 @@ body {
 }
 .home-container {
 	position: absolute;
-	top: 70%;
-	left: 27%;
+	top: 80%;
+	left: 50%;
+	-webkit-transform: translate(-50%, -50%);
+	-moz-transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	-o-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+	background-size: 100% 100%;
+	max-width: 100%;
+	height: auto;
 }
 /*------------------------Homepage Navbar-------------------------*/
 .home-link {
 	width: 120px;
 	height: 22px;
-	display: inline-block;
 	border: 2px solid #3399FF;
 	border-radius: 10px;
 	text-align: center;
@@ -227,8 +238,8 @@ body {
   background: white;
   -webkit-transition-property: color;
   transition-property: color;
-  -webkit-transition-duration: 0.5s;
-  transition-duration: 0.5s;
+  -webkit-transition-duration: 1s;
+  transition-duration: 1s;
 }
 .hvr-radial-out:before {
   content: "";
@@ -244,8 +255,8 @@ body {
   transform: scale(0);
   -webkit-transition-property: transform;
   transition-property: transform;
-  -webkit-transition-duration: 0.5s;
-  transition-duration: 0.5s;
+  -webkit-transition-duration: 1s;
+  transition-duration: 1s;
   -webkit-transition-timing-function: ease-out;
   transition-timing-function: ease-out;
 }
