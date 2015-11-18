@@ -1,19 +1,18 @@
 .bmenu{
     padding: 0px;
-    position: absolute;
+    position: fixed;
     margin-top: 0px;
 }
 .bmenu li{
-    font-size: 30px;
+    font-size: 25px;
     display: inline;
 }
 .bmenu li a{
-	float: left;
-	text-transform: uppercase;
 	text-shadow: 0px 0px 5px #0d1a3a;
 	font-family: 'Yanone Kaffeesatz', sans-serif;
 	letter-spacing: 1px;
 	padding-left: 5px;
+	position: center;
 	text-decoration: none;
 	-webkit-transition: all 0.3s ease-in-out;
 	-moz-transition: all 0.3s ease-in-out;
@@ -21,11 +20,12 @@
 	-ms-transition: all 0.3s ease-in-out;
 	transition: all 0.3s ease-in-out;
 }
+
 .bmenu:hover li a{
 	text-shadow: 0px 0px 5px #0d1a3a;
 }
 .bmenu li a:hover{
-	color: #3399FF, !important;
+	color: #3399FF;
 	text-shadow: 0px 0px 1px #0d1a3a;
 	padding-left: 10px;
 }

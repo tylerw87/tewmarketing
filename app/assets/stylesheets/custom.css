@@ -9,6 +9,7 @@
 	right: 0;
 	text-align: center;
 	font-size: 25px;
+	height: 40px;
 }
 
 body {
@@ -16,6 +17,7 @@ body {
 	margin: 0 auto !important;
 	margin-top: -15px;
 	font-size: 100%;
+	margin-bottom: 100px;
 }
 
 .contacts-background {
@@ -148,6 +150,7 @@ body {
 .sidebar-items {
 	float: left;
 	margin-top: 5px;
+	color: white;
 
 }
 .fa:hover {
@@ -166,7 +169,7 @@ body {
 	font-family: 'Yanone Kaffeesatz', sans-serif;
 }
 /*End Footer*/
-
+/*Top bar*/
 /*---------------------------Homepage----------------------------*/
 .home .bmenu {
 	display: none;
@@ -212,13 +215,9 @@ body {
 	text-align: center;
 	font-family: 'Yanone Kaffeesatz', sans-serif;
 	font-size: 20px;
-	color: #9A3334;
 }
 .home-link a:link {
 	text-decoration: none;
-}
-.home-link a {
-	color: #9A3334;
 }
 .home-link a:hover {
 	color: white;
@@ -269,30 +268,27 @@ body {
 }
 /*---------------------------AboutPage-------------------------*/
 .aboutimage {
-	width: 100%;
+	width: 300px;
 	height: auto;
 	margin: 1em auto;
 	-webkit-border-radius: 99em;
 	-moz-border-radius: 99em;
 	border-radius: 99em;
-	box-shadow: 0 8px 5px rgba(0, 0, 0, 0.3); 
+	box-shadow: 0 8px 5px rgba(0, 0, 0, 0.3);
+	margin-left: 150px;
 }
 .aboutpage {
 	padding-top: 100px;
 	width: 100%;
-}
-.aboutimage2 {
-	height: 300px;
-	width: 400px;
-	box-shadow: 0 8px 5px rgba(0, 0, 0, 0.3);
-	margin-left: 100px;
+	columns: 400px 2;
 }
 .profile {
 	font-family: 'Yanone Kaffeesatz', sans-serif;
-	float: left;
 	width: 350px;
 	color: #9A3334;
 	padding-bottom: 50px;
+	position: center;
+	text-shadow: 0 -4px 3px rgba(255, 255, 255, 0.3), 0 3px 4px rgba(0, 0, 0, 0.2);
 }
 .nhpic .profile .ul-about .aboutimage .aboutimage2 .connect {
 	float: left;
@@ -304,36 +300,47 @@ body {
 .aboutlinks {
 	list-style-type: none;
 }
-h3 {
-	display: inline;
-	margin-left: 180px;
-}
 .aboutlinks {
-	margin-left: 550px;
 	padding-top: 30px;
-	position: center;
+}
+.aboutlink1 a:link {
+	color: #9A3334;
+	text-decoration: none;
+}
+.aboutlink1 a:hover {
+	color: #3399FF;
 }
 .connect {
-	margin-top: 100px;
 	font-family: 'Yanone Kaffeesatz', sans-serif;
 	color: #9A3334;
+	clear: both;
+	margin-left: 150px;
+	display: inline;
+	margin-bottom: 50px;
+	float: left;
+	text-shadow: 0 -4px 3px rgba(255, 255, 255, 0.3), 0 3px 4px rgba(0, 0, 0, 0.2);
 }
 .aboutlink1 {
 	font-size: 30px;
-}
-.aboutlink2 {
-	padding: 5px;
-	margin-left: 30px;
+	position: center;
+	margin-left: 10px;
+	display: inline;
 }
 /*----------------------------Services Page-------------------------*/
 .services {
+	padding-top: 100px;
+	margin-bottom: 100px;
+}
+.services-intro p{
+	margin: 0px 50px;
+	height: 100px;
+	font-size: 20px;
 	font-family: 'Yanone Kaffeesatz', sans-serif;
 	color: #217C7E;
-	padding-top: 100px;
 	text-shadow: 0 -4px 3px rgba(255, 255, 255, 0.3), 0 3px 4px rgba(0, 0, 0, 0.2);
 }
-.services-intro {
-	margin: 0px 40px;
+.item-img {
+	margin-bottom: 100px;
 }
 /*Effects*/
 .item {
@@ -447,7 +454,39 @@ h3 {
 .services-div {
 	padding: 75px;
 }
-
+/*Blog page*/
+.blog {
+	padding-top: 75px;
+}
+.blogposts {
+	padding-left: 20px;
+	font-family: 'Yanone Kaffeesatz', sans-serif;
+	color: #9A3334;
+	padding-bottom: 50px;
+	text-shadow: 0 -4px 3px rgba(255, 255, 255, 0.3), 0 3px 4px rgba(0, 0, 0, 0.2);
+}
+tr td{
+	font-size: 20px;
+}
+.title {
+	font-size: 50px;
+	margin-bottom: 50px;
+}
+.postbody {
+	font-size: 30px;
+	margin-bottom: 30px;
+}
+.field {
+	width: 300px;
+}
+.bodyfield {
+	height: 400px;
+	width: 500px;
+	white-space: pre-wrap;
+}
+.newbody {
+	white-space: pre-wrap;
+}
 
 
 

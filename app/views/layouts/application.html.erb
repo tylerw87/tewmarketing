@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+    <link href='https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz' rel='stylesheet' type='text/css'>
 <head>
   <title>Tewmarketing</title>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
@@ -13,8 +14,6 @@
         <meta name="description" content="Blur Menu with CSS3 Transitions" />
         <meta name="keywords" content="css3, transitions, menu, blur, navigation, typography, font, letters, text-shadow" />
         <meta name="author" content="Codrops" />
-        <link rel="shortcut icon" href="../favicon.ico"> 
-        <link rel="stylesheet" type="text/css" href="css/demo.css" />
         <link rel="stylesheet" type="text/css" href="css/style1.css" />
 		<!--[if IE]>
 			<link rel="stylesheet" type="text/css" href="css/styleIE.css" />
@@ -38,6 +37,10 @@
                     <li>
                     	<%= link_to "Contact Us", new_contact_path %>
                     </li>
+                    <li>
+                        <%= link_to "Blog", :controller => "posts" %>
+                    </li>
+
                 </ul>
             </div>
         </div>
@@ -48,6 +51,26 @@
 <% end %>
 
 <%= yield %>
+
+    <div class="sidebar">
+      <ul class="ul-sidebar">
+        <li class="sidebar-items">
+          <i class="fa fa-facebook-square fa-2x"></i>
+        </li>
+        <li class="sidebar-items">
+          <i class="fa fa-twitter fa-2x"></i>
+        </li>
+        <li class="sidebar-items">
+          <i class="fa fa-instagram fa-2x"></i>
+        </li>
+        <li class="sidebar-items">
+          <i class="fa fa-google-plus fa-2x"></i>
+        </li>
+      </ul>
+    </div>
+    <div class="footer">
+      <i class= "fa fa-copyright"></i> Copyright 2015 TEW Marketing.
+    </div>
 </div>
 </body>
 </html>
