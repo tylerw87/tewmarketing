@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  get 'pages/test'
+
   get 'pages/blog'
 
   get 'pages/about'

@@ -9,5 +9,6 @@ class PagesController < ApplicationController
 	end
 	def blog
 	end
-
+	def test
+	end
 end

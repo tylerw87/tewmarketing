@@ -272,7 +272,7 @@ a {
 	-moz-border-radius: 99em;
 	border-radius: 99em;
 	box-shadow: 0 8px 5px rgba(0, 0, 0, 0.3);
-	margin-left: 150px;
+	margin-left: 120px;
 }
 .aboutpage {
 	padding-top: 100px;
@@ -327,6 +327,7 @@ a {
 .services {
 	padding-top: 100px;
 	margin-bottom: 100px;
+	font-family: 'Yanone Kaffeesatz', sans-serif;
 }
 .services-intro p{
 	margin: 0px 50px;
@@ -356,7 +357,7 @@ a {
 	width: 450px;
 	height: 350px;	
 	box-shadow: 0 8px 5px rgba(0, 0, 0, 0.3);	
-	border-radius: 5px;		
+	border-radius: 5px;	
 }
 .item-hover,
 .item-hover .mask,
@@ -469,9 +470,21 @@ a {
 }
 .articleimg {
 }
+/*---------------------------Portfolio page----------------------*/
+.portfolio {
+	margin-top: 300px;
+	color: black;
+}
+.portfolio-pic {
+	margin-top: 100px;
+	height: 200px;
+	width: auto;
+}
 
-
-
+/*TESTTESTTESTTESTTESTTEST*/
+.test {
+	padding-top: 200px;
+}
 
 
 
