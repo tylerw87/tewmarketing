@@ -30,6 +30,10 @@ gem 'spring',        group: :development
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
+#blog
+gem 'redcarpet'
+gem 'coderay'
+
 gem 'bootstrap-sass', '~> 3.3.1.0'
 gem 'autoprefixer-rails'
 
