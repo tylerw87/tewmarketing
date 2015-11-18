@@ -8,19 +8,18 @@
     <div class="home-container">
         <div class="home-content">
             <div class="home-bmenu">
-                
-                <div class="home-link hvr-radial-out">
-                	<%= link_to "About Us", :controller => "pages", :action => "about" %>
-                </div>
-                <div class="home-link hvr-radial-out">
-                	<%= link_to "Services", :controller => "pages", :action => "services" %>
-                </div>
-                <div class="home-link hvr-radial-out">
-                	<%= link_to "Contact Us", new_contact_path %>
-                </div>
-                <div class="home-link hvr-radial-out">
-                	<%= link_to "Blog", :controller => "posts" %>
-                </div>
+               <a href="/pages/about"> 
+                    <div class="home-link hvr-radial-out">About Us</div>
+                </a>
+                <a href="/pages/services">
+                    <div class="home-link hvr-radial-out">Services</div>
+                </a>
+                <a href="/contacts/new">
+                    <div class="home-link hvr-radial-out">Contact Us</div>
+                </a>
+                <a href="/pages/blog">
+                    <div class="home-link hvr-radial-out">Blog</div>
+                </a>
             </div>
         </div>
     </div>

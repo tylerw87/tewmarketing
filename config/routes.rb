@@ -1,5 +1,4 @@
 Rails.application.routes.draw do
-  resources :posts
   get 'pages/blog'
 
   get 'pages/about'

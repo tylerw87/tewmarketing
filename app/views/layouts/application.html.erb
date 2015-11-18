@@ -25,6 +25,7 @@
         <div class="container">
             <div class="content">
                 <ul class="bmenu">
+                    <img src ="/assets/TEWlogo5.png" class="navbar-img">
                     <li>
                     	<%= link_to "Home", root_path %>
                     </li>
@@ -38,7 +39,7 @@
                     	<%= link_to "Contact Us", new_contact_path %>
                     </li>
                     <li>
-                        <%= link_to "Blog", :controller => "posts" %>
+                        <%= link_to "Blog", :controller => "pages", :action => "blog" %>
                     </li>
 
                 </ul>
