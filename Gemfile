@@ -1,5 +1,5 @@
 source 'https://rubygems.org'
-ruby '2.0.0'
+ruby '2.2.3'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.4'
@@ -32,6 +32,8 @@ gem 'spring',        group: :development
 gem 'social-share-button', '~> 0.1.6'
 gem 'redcarpet', '3.3.3'
 gem 'shareable'
+
+gem 'puma'
 
 gem 'bootstrap-sass', '~> 3.3.1.0'
 gem 'autoprefixer-rails'
