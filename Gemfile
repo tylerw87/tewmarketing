@@ -14,7 +14,7 @@ gem 'coffee-rails', '~> 4.1.0'
 gem 'therubyracer', platforms: :ruby
 gem 'sqlite3', group: [:development, :test]
 # Use postgresql as the database for production
-group :production, :staging do
+group :production do
   gem 'pg'
   gem 'rails_12factor'
 end
