@@ -263,6 +263,9 @@ a {
   -webkit-transform: scale(2);
   transform: scale(2);
 }
+.home-link {
+	margin-bottom: 15px;
+}
 /*---------------------------AboutPage-------------------------*/
 .aboutimage {
 	width: 300px;
@@ -443,6 +446,7 @@ a {
 	width: 100%;
 	font-family: 'Yanone Kaffeesatz', sans-serif;
 	padding-top: 50px;
+	font-size: 100%;
 }
 .bloglinks {
 	float: left;
@@ -469,8 +473,17 @@ a {
 .articlesocialshare {
 	font-size: 20px;
 }
-.articleimg {
+@media only screen and (max-width: 550px){
+	.articleimg {width:95%;
+	}
 }
+@media only screen and (max-width: 900px){
+	.bloglinks {display: none;
+	}
+	.mainarticle {
+	}
+}
+
 .articlequote {
 	font-style: italic;
 }
