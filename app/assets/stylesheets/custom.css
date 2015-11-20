@@ -375,7 +375,7 @@ a {
 	.services-intro p{margin-bottom:50px;}
 }
 @media only screen and (max-width:800px){
-	.services-div{margin-left:-40px;}
+	.services-div{margin-left:-55px;}
 }
 .item-hover,
 .item-hover .mask,
@@ -466,7 +466,7 @@ a {
 }
 .bloglinks {
 	float: left;
-	width: 200px;
+	width: 175px;
 	height: 500px;
 	border: 1px solid gray;
 	font-size: 20px;
@@ -477,7 +477,7 @@ a {
 }
 .mainarticle {
 	margin-left: 22%;
-	margin-bottom: 30px;
+	margin-bottom: 50px;
 	display: inline;
 	float: left;
 	width: 60%;
@@ -492,14 +492,12 @@ a {
 .articlesocialshare {
 	font-size: 20px;
 }
-@media only screen and (max-width: 550px){
+@media only screen and (max-width: 800px){
 	.articleimg {width:95%;}
 	img .selfie-pic{width:95%;}
-}
-@media only screen and (max-width: 900px){
-	.bloglinks {display: none;
-	}
+	.bloglinks {display:none;}
 	.articleimg img {width: 98%;}
+	.mainarticle{margin-left:2px;padding-right:100px;width:90%;}
 }
 
 .articlequote {
