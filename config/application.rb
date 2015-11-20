@@ -25,3 +25,6 @@ module Tewmarketing
     config.serve_static_assets = true
   end
 end
+if Rails.env == "production"
+  config.middleware.use("Rack::GoogleAnalytics", :web_property_id => "UA-70417873-1")
+end
