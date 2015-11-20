@@ -80,15 +80,14 @@ body {
 .well .form-control {
 	border: none;
 	background: transparent;
-  	font-family:Lato ;
-  	font-weight:700 ;
+  	font-family: 'Yanone Kaffeesatz', sans-serif;
+  	font-size: 22px;
 	display: block;
-	height: 20px;
+	height: 30px;
 	outline: none;
 	width: calc(100% - 24px) ;
 	margin: auto;
 	padding: 6px 12px 6px 12px;
-	font-size: 15px;
 }
 .bar {
 	width: 100%;
@@ -131,6 +130,7 @@ body {
 .form-control:hover {
 	border: 1px solid #3399FF;
 }
+::placeholder{color:black;}
 /*------------------------------Sidebar-------------------------------*/
 .sidebar {
 	position: fixed;
@@ -206,7 +206,7 @@ body {
 	width: 120px;
 	height: 22px;
 	border: 2px solid #3399FF;
-	border-radius: 10px;
+	border-radius: 5px;
 	text-align: center;
 	font-family: 'Yanone Kaffeesatz', sans-serif;
 	font-size: 20px;

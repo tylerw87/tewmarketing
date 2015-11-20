@@ -23,6 +23,7 @@
         <link type="text/css" href="application.css.scss" rel="stylesheet">
 </head>
 <body>
+  <% cache(action_suffix: "application") do %>
         <div class="container">
             <div class="content">
                 <ul class="bmenu">
@@ -53,6 +54,7 @@
 <% end %>
 
 <%= yield %>
+<% end %>
 
     <div class="sidebar">
       <ul class="ul-sidebar">
