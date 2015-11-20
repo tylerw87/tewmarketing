@@ -494,9 +494,7 @@ a {
 }
 @media only screen and (max-width: 800px){
 	.articleimg {width:95%;}
-	img .selfie-pic{width:95%;}
 	.bloglinks {display:none;}
-	.articleimg img {width: 98%;}
 	.mainarticle{margin-left:2px;padding-right:100px;width:90%;}
 }
 
