@@ -517,7 +517,7 @@ a {
 	font-size: 30px;
 }
 @media only screen and (max-width:800px){
-	.articlecta {margin-bottom:100px;
+	.articlecta {padding-bottom: 150px;
 	}
 }
 /*----------------------------Blog 2----------------------------*/
