@@ -513,8 +513,11 @@ a {
 	padding-top: 40px;
 }
 .articlecta {
-	margin-bottom: 50px;
+	margin-bottom: 130px;
 	font-size: 30px;
+}
+.articlecta .ctanext {
+	margin-bottom: 50px;
 }
 /*----------------------------Blog 2----------------------------*/
 .selfie-pic {
