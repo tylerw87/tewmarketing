@@ -369,10 +369,13 @@ a {
 	border-radius: 5px;	
 }
 @media only screen and (max-width:800px){
-	.item, .item-hover, .item-hover .mask, .item-img, .item-type-move .item-info{width:300px;height:220px;position:center;}
+	.item, .item-hover, .item-hover .mask, .item-img, .item-type-move .item-info{width:300px;height:220px;}
 }
 @media only screen and (max-width:800px){
-	.services-intro p{margin-bottom:30px;}
+	.services-intro p{margin-bottom:50px;}
+}
+@media only screen and (max-width:800px){
+	.services-div{margin-left:-40px;}
 }
 .item-hover,
 .item-hover .mask,
