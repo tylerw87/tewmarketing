@@ -17,7 +17,6 @@ gem 'sqlite3', group: [:development, :test]
 group :production do
   gem 'pg'
   gem 'rails_12factor'
-  gem 'rack-google-analytics', :require => "rack/google_analytics"
 end
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
