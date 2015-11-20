@@ -328,9 +328,9 @@ a {
 	padding: .25em;
 }
 @media only screen and (max-width:800px){
-	.connect{margin-bottom:1em;margin-left:25%;}
-	.profile {margin-left:25%;padding-top:12em;}
-	.aboutimage{width:200px; margin-left:25%;}
+	.connect{margin-bottom:1em;margin-left:5%;}
+	.profile {margin-left:5%;padding-top:12em;}
+	.aboutimage{width:200px; margin-left:5%;}
 }
 
 /*----------------------------Services Page-------------------------*/
