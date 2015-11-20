@@ -8,6 +8,7 @@
       <div class="left"> 
         <h1>Every day, there are hundreds of new businesses looking to edge you out of the market. <span style="color: #9A3334">Don't worry, it's our job to move you to the front.</span> While working with us, you will be allowed to focus on channeling your energies behind your passion, <span style="color: #9A3334">your business, </span>and let us handle the rest. Please fill out the form to the right and let us know how we can help!</h1>
       </div>
+      <% cache(action_suffix: "contact") do %>
       <div class="right">
           <div class="well"> 
             <img src="/assets/TEW-YOU.png" class="contact-image">
@@ -34,6 +35,7 @@
             <% end %>
           </div>
         </div>
+        <% end %>
     </div>
     </body>
 </html>
