@@ -268,17 +268,14 @@ a {
 }
 /*---------------------------AboutPage-------------------------*/
 .aboutimage {
-	width: 20em;
+	width: 300px;
 	height: auto;
 	margin: 1em auto;
-	-webkit-border-radius: 1em;
-	-moz-border-radius: 1em;
-	border-radius: 1em;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
 	box-shadow: 0 8px 5px rgba(0, 0, 0, 0.3);
 	margin-left: 5em;
-}
-@media only screen and (max-width: 550px){
-	.aboutimage{width:15em; margin-left:3em;}
 }
 .aboutpage {
 	padding-top: 100px;
@@ -293,9 +290,6 @@ a {
 	padding-bottom: 50px;
 	position: center;
 	text-shadow: 0 -4px 3px rgba(255, 255, 255, 0.3), 0 3px 4px rgba(0, 0, 0, 0.2);
-}
-@media only screen and (max-width: 800px){
-	.profile {margin-left:3em;padding-top:12em;}
 }
 .nhpic .profile .ul-about .aboutimage .aboutimage2 .connect {
 	float: left;
@@ -333,11 +327,10 @@ a {
 	display: inline;
 	padding: .25em;
 }
-@media only screen and (max-width: 550px){
-	.connect{margin-left:3em;}
-}
 @media only screen and (max-width:800px){
-	.connect{margin-bottom:1em;}
+	.connect{margin-bottom:1em;margin-left:25%;}
+	.profile {margin-left:25%;padding-top:12em;}
+	.aboutimage{width:200px; margin-left:25%;}
 }
 
 /*----------------------------Services Page-------------------------*/
