@@ -516,8 +516,9 @@ a {
 	margin-bottom: 130px;
 	font-size: 30px;
 }
-.articlecta .ctanext {
-	margin-bottom: 50px;
+@media only screen and (max-width:800px){
+	.articlecta {margin-bottom:100px;
+	}
 }
 /*----------------------------Blog 2----------------------------*/
 .selfie-pic {
