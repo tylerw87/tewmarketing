@@ -2,6 +2,7 @@ Rails.application.routes.draw do
   get 'pages/test'
 
   get 'pages/blog'
+  get 'pages/blog2'
 
   get 'pages/about'
 
