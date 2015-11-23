@@ -27,6 +27,11 @@
       ga('send', 'pageview');
     </script>
     <!--Analytics end-->
+    <b:if cond='data:blog.postImageUrl'>
+<meta expr:content='"" + data:blog.postImageUrl' property='og:image'/>
+<b:else/>
+<meta content='http://2.bp.blogspot.com/-erTXCq61ULM/TmHYAQBZ0GI/AAAAAAAACCs/6cBX54Dn6Gs/s200-c/default.png' property='og:image'/>
+</b:if>
 </head>
 
 <body class="blog">
