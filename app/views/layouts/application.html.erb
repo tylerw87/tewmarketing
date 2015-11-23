@@ -2,10 +2,12 @@
 <html>
     <link href='https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz' rel='stylesheet' type='text/css'>
 <head>
-  <title>Tewmarketing</title>
-  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
-  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
-  <%= csrf_meta_tags %>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%= content_for?(:title) ? yield(:title) : "My Application" %></title>
+    <meta name="description" content="<%= content_for?(:description) ? yield(:description) : "Learn Rails" %>">
+    <%= stylesheet_link_tag "application", media: "all", "data-turbolinks-track" => true %>
+    <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
+    <%= csrf_meta_tags %>
         <link rel="stylesheet" type="text/css" href="css/style1.css" />
 		<!--[if IE]>
 			<link rel="stylesheet" type="text/css" href="css/styleIE.css" />
