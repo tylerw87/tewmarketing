@@ -1,21 +1,17 @@
 <!DOCTYPE html>
 <head>
-	<!-- meta -->
-	<% content_for :title do %>Knowing Your Strengths Gives You a Competitive Advantage<% end %>
-	<% content_for :description do %>How Do People See You at Your Best?<% end %>
-	<title>Knowing Your Strengths Gives You a Competitive Advantage</title>
-	<meta name="description" content="How Do People See You at Your Best?" />
-	<meta property="og:url" content="http://www.tewmarketing.com/pages/blog" />
-	<meta property="og:type" content="article" />
-	<meta property="og:title" content="Knowing Your Strengths Gives You a Competitive Advantage" />
-	<meta property="og:description" content="How Do People See You at Your Best?" />
-	<meta property="article:author" content="Tyler Willis" />
-	<meta property="og:image" content="http://www.tewmarketing.com/assets/blog/strengths.jpg" />
+	<%
+	meta title: "My Title",
+	     description: "My description",
+	     keywords: %w(keyword1 keyword2 keyword3)
+	%>
+	<%
+	meta og: {
+	  image: "http://tewmarketing.com/assets/blog/strengths.jpg"
+	}
+	%>
 	<link type="text/css" href="custom.css.scss" rel="stylesheet">
 	<link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
-	<!--Twitter meta-->
-	<meta name="twitter:card" value="summary">
-	<!--end copy-->
     <!--Google Analytics-->
     <script>
       (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){

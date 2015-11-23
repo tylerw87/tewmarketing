@@ -18,6 +18,8 @@ group :production do
   gem 'pg'
   gem 'rails_12factor'
 end
+
+gem 'metamagic'
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
 # Turbolinks makes following links in your web application faster. Read more: https://github.com/rails/turbolinks
