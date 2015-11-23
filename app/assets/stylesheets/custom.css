@@ -264,6 +264,9 @@ a {
 .home-link {
 	margin-bottom: 15px;
 }
+@media only screen and (max-width:1100px) {
+	.home-link {width: 300px; height: 50px; font-size: 35px;}
+}
 /*---------------------------AboutPage-------------------------*/
 .aboutimage {
 	width: 300px;
@@ -325,7 +328,7 @@ a {
 	display: inline;
 	padding: .25em;
 }
-@media only screen and (max-width:800px){
+@media only screen and (max-width:1100px){
 	.connect{margin-bottom:1em;margin-left:5%;}
 	.profile {margin-left:5%;padding-top:12em;}
 	.aboutimage{width:200px; margin-left:5%;}
@@ -374,7 +377,7 @@ a {
 @media only screen and (max-width:1100px){
 	.services-intro p{margin-bottom:50px;}
 }
-@media only screen and (max-width:100px){
+@media only screen and (max-width:1100px){
 	.services-div{margin-left:-55px;}
 }
 .item-hover,
@@ -492,7 +495,7 @@ a {
 .articlesocialshare {
 	font-size: 20px;
 }
-@media only screen and (max-width: 800px){
+@media only screen and (max-width: 1100px){
 	.articleimg {width:95%;}
 	.bloglinks {display:none;}
 	.mainarticle{margin-left:2px;padding-right:100px;width:90%;}
@@ -516,7 +519,7 @@ a {
 	padding-bottom: 100px;
 	font-size: 30px;
 }
-@media only screen and (max-width:800px){
+@media only screen and (max-width:1100px){
 	.articlecta {padding-bottom: 100px;
 	}
 }
