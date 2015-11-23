@@ -264,7 +264,7 @@ a {
 .home-link {
 	margin-bottom: 15px;
 }
-@media only screen and (max-width:800px) {
+@media only screen and (max-width:1100px) {
 	.home-link {width: 300px; height: 50px; font-size: 40px;}
 }
 /*---------------------------AboutPage-------------------------*/
@@ -451,7 +451,13 @@ a {
 
 .item-type-move .item-hover:hover .item-info .headline {
 	top:4%;
-}							
+}		
+.item-type-move .item-hover:active {
+	opacity:1;
+}	
+.item-type-move .item-hover:active .item-info .headline {
+	top:4%;
+}					
 .item-img {			
 	z-index:0;			
 }
