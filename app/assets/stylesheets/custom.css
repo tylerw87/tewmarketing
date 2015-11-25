@@ -464,6 +464,10 @@ a {
 	height: 1000px;
 	font-size: 20px;
 }
+.articleimg{
+	max-width:630px;
+	height: auto;
+}
 .articletitle {
 	margin-bottom: 15px;
 	font-size: 35px;

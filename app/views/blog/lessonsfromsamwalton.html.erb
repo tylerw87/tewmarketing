@@ -1,2 +1,101 @@
-<h1>Blog#post</h1>
-<p>Find me in app/views/blog/post.html.erb</p>
+<!DOCTYPE html>
+<head>
+	<%
+	meta title: "TEW Marketing",
+	     description: "All-In-One Marketing and Website Creation",
+     		keywords: %w(marketing social-media business facebook twitter instagram hashtags selfies bp dunkin-donuts hanes)
+	%>
+	<%
+	meta og: {
+	  image: "http://tewmarketing.com/assets/blog/80_Sam-Walton.png",
+	  title: "Timeless Lessons for Businesses Big and Small",
+	  description: "From the man who built the biggest retailer in the world, there are lessons that can be used in our big companies, small businesses, and personal lives."
+	}
+	%>
+	<!-- Twitter-->
+	<%
+	meta twitter: {
+	  card: "summary",
+	  site: "@tewmarketing",
+	  title: "Timeless Lessons for Businesses Big and Small",
+	  description: "Lessons for Life from the builder of the world's biggest retailer."
+	}
+	%>
+	<link type="text/css" href="custom.css.scss" rel="stylesheet">
+	<link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+    <!--Google Analytics-->
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-70417873-1', 'secret-caverns-5811.herokuapp.com');
+      ga('send', 'pageview');
+    </script>
+    <!--Analytics end-->
+</head>
+
+<body class="blog">
+	<% cache(action_suffix: "blog") do %>
+	<div class="bloglinks">
+		<strong>Other Great Articles:</strong>
+		<p><a href="/pages/blog" target="_blank">Knowing Your Strengths Gives You a Competitive Advantage</a></p>
+		<p><a href="/pages/blog2" target="_blank">Fixing Other Business Owner's Social Media Mistakes</a></p>
+	</div>
+	<div class="mainarticle">
+		<div class="articletitle">
+			Timeless Lessons for Businesses Big and Small
+		</div>
+		<div class"articleauthor">
+			Author: Tyler
+		</div>
+		<div class"articlesocialshare">Please Share!  
+			<!-- Twitter -->
+			<a href="http://twitter.com/home?status=SHAREMESSAGE" title="Share on Twitter" target="_blank"><i class="fa fa-twitter"></i></a>
+			 <!-- Facebook -->
+			<a href="https://www.facebook.com/sharer/sharer.php?u=tewmarketing" title="Share on Facebook" target="_blank"><i class="fa fa-facebook"></i></a>
+			<!-- Google+ -->
+			<a href="https://plus.google.com/share?url=SHAREMESSAGE" title="Share on Google+" target="_blank"><i class="fa fa-google-plus"></i></a>
+			<!-- StumbleUpon -->
+			<a href="http://www.stumbleupon.com/submit?url=SHAREMESSAGE" title="Share on StumbleUpon" target="_blank" data-placement="top"><i class="fa fa-stumbleupon"></i></a>
+			<!-- LinkedIn --> 
+			<a href="http://www.linkedin.com/shareArticle?mini=true&url=&title=&summary=SHAREMESSAGE" title="Share on LinkedIn" target="_blank"><i class="fa fa-linkedin"></i></a>	
+		</div>
+		<div class="articlebody">
+		<div>
+			<img src="/assets/blog/80_Sam-Walton.png" class="articleimg">
+		</div>
+			<p>Sam Walton. Remember the man who created what is now the largest retail company in America, the Walmart? He passed away 23 years ago now. His children, Samuel, Jim, and Alice are popular in today’s business circles due to their <a href="http://www.forbes.com/profile/walton-1/" target="_blank">enormous net worth</a>. Sure, we may remember the man whose massive company forced thousands of small businesses to <a href="http://www.larouchepub.com/other/2003/3045walmart_iowa.html" target="_blank">close their doors</a>, but how did he get there? Or better yet, where did he start?</p>
+			<p>A couple of years ago I read an autobiography about the man entitled <i>Sam Walton: Made in America</i> and was inspired by his passion, desire, and willing to be unorthodox. These are the same characteristics that need to be true of us today no matter the size of our business.</p>
+			<p>Sure, you may not be setting your sights on becoming the next Walmart, Apple, or Tesla, <strong>but you do want to be successful, right?</strong> I think Walton thought often about what it was like in the early days of his company starting out in Rogers, Arkansas. What it was like when he was a small business owner. For a great read, find a cheap copy of the book on <a href="http://www.amazon.com/Sam-Walton-Made-In-America/dp/0553562835" target="_blank">Amazon</a>. For a few of my favorite inspirational lessons to be learned from Sam Walton, read on!</p>
+			<p><i>“The people who decide to become businessmen, dreamt to be successful at it. They dream to make fruitful gains from their endeavors; they dream to leave great legacies behind. They long to one day be called a true entrepreneur; and they dream to be able to change the world in any way that they can.”</i></p>
+			<img src="/assets/blog/Walton_Five_and_Dime_store.jpg" class="articleimg">
+			<p><h3>Lesson One: Swim Upstream</h3></p>
+			<p>You are not going to stick out because you are swimming with the rest of the pack. Don’t try to be the next Walmart, there are already 4,000 of them in the United States alone. Forget about competing with Apple, their R&D department has a budget of $5 billion. Find your own path, and commit to it 100%. Yes, just as I am suggesting with this article about Sam Walton, learn from other people’s and company’s successes. <strong>Mirror their success with your own identity.</strong></p>
+			<p>Don’t feel like you have anything new to bring to the table? Stop being cynical - you COMING to the table is what’s new. Be yourself. Find something that you are passionate about and your individualism will start to show.</p>
+			<p><i>“Go the other way. Ignore the conventional wisdom. If everybody is doing it one way, there’s a good chance you can find your niche by going exactly in the opposite direction.”</i></p>
+			<p><h3>Lesson Two: Communicate Everything You Possibly Can to your Partners</h3></p>
+			<p>Open communication is key. Openness leads to opportunity, sincerity, and motivation. Lack of openness leads to confusion, negligence, and inefficiency. While not overlooking discernment, be open with your sales team and business partners. Hold nothing back. <strong>The best way to get them as excited about the mission as you are is to give them the information that you have.</strong></p>
+			<p>In small business, think about being open with your vendors and customers. Stay away from being a mystery. Companies that are mysteries don’t do well in this day and age. Today, the customer is in charge. If they can’t find what they are looking for from you then they will move on to someone else. Don’t help out your competition.</p>
+			<p><i>“The more they know, the more they’ll understand. The more they understand, the more they’ll care. Once they care, there’s no stopping them. Information is power, and the gain you get from empowering your associates more than offsets the risk of informing your competitors.”</i></p>
+			<p><h3>Lesson Three: Commit to Your Business</h3></p>
+			<p>Once you have a decent strategy in place, go for it full throttle. There are days when you will love every second of your business. There will also be days when you will have to, in fact, work! That guy sitting on his yacht probably didn’t get there without having to work first. Realize this fact, and embrace it. </p>
+			<p>In your personal life, I would encourage you to also develop a strategy and commit to it. Don’t lose yourself just trying to push your business full throttle every minute of the day. Commit to down time as well. <strong>Commit to proper sleep, your family, your church, physical health.</strong> From EHS Today, “The average functional level of any sleep-deprived individual is comparable to the 9th percentile of non-sleep deprived individuals.” Recharge your body and mind and don’t look back wishing you had taken the time to develop a relationship with your kids!</p>
+			<p><i>“Believe in it more than anything else. If you love your work, you’ll be out there every day trying to do the best you can, and pretty soon everybody around will catch the passion from you - like a fever.”</i></p>
+			<p>Think about these truths during your day today; swimming upstream, open communication, and commitment. These lessons are invaluable if effectively installed into your personal and business strategies!</p>
+			<img src="/assets/blog/Sam-Waltons-Pickup-cropped.jpg" class="articleimg">
+		</div>
+		<hr>
+		<div class="articlecta">
+			<a href="/contacts/new" target="_blank">Contact Us</a> so we can help you implement these truths into your business!
+			<hr>
+			<p>Consider this post:</p>
+			<p><a href="/pages/blog" class="ctanext">Knowing Your Strengths Gives You a Competitive Advantage</a></p>
+		</div>
+
+	</div>
+	<% end %>
+
+</body>
+</html>
