@@ -53,15 +53,9 @@ body {
 	width: 60%;
 	float: left
 }
-@media screen and (max-width: 60em){
-	.left{
-		font-size: 90%;
-	}
-}
-@media screen and (max-width: 35em){
-	.left{
-		font-size: 60%;
-	}
+@media screen and (max-width: 1100px){
+	.right{clear:both; width: 80%; margin-left: 50px;}
+	.left{width: 80%; margin-left:50px;}
 }
 /*------------------------------Image----------------------------*/
 .contact-image {
@@ -268,7 +262,9 @@ a {
 	margin-bottom: 15px;
 }
 @media only screen and (max-width:1100px) {
-	.home-link {width: 300px; height: 50px; font-size: 40px;}
+	.home-link {width: 500px; height: 100px; font-size: 80px;}
+	.homepic{top:20%;}
+	.home-container{margin-bottom:100px;}
 }
 /*---------------------------AboutPage-------------------------*/
 .aboutimage {
@@ -283,13 +279,14 @@ a {
 }
 .aboutpage {
 	padding-top: 100px;
-	width: 100%;
-	columns: 400px 2;
-	line-height:2em;
 }
 .profile {
 	font-family: 'Yanone Kaffeesatz', sans-serif;
+	font-size:20px;
 	width: 20em;
+	float: right;
+	margin-right: 120px;
+	margin-top:-350px;
 	color: #9A3334;
 	padding-bottom: 50px;
 	position: center;
@@ -339,10 +336,10 @@ a {
 	display: inline;
 	padding: .25em;
 }
-@media only screen and (max-width:800px){
-	.connect{margin-bottom:1em;margin-left:5%;}
-	.profile {margin-left:5%;padding-top:12em;font-size: 30px;}
-	.aboutimage{width:400px; margin-left:5%;}
+@media only screen and (max-width:1100px){
+	.connect{margin-bottom:1em;margin-left:30%;}
+	.aboutimage{width:400px; margin-left:24%;}
+	.profile{margin-top:0; font-size: 40px; margin-right: 100px; width:80%;}
 }
 
 /*----------------------------Services Page-------------------------*/
@@ -366,7 +363,7 @@ a {
     top: 100px; left: 0; bottom: 0; right: 0;
     text-align: center;
     padding-bottom: 30px;
-    padding-left: 20px;
+    margin-left:120px;
 }
 .item-title-marketing{
 	text-align: center;
@@ -378,7 +375,7 @@ a {
 	text-shadow: 0 -2px 1px rgba(255, 255, 255, 0.3), 0 1px 2px rgba(0, 0, 0, 0.2);
 	border: 2px solid #F3EFE0;
 	border-radius: 10px;
-	margin-left: 20px;
+	margin-left: 120px;
 }
 .item-title-website{
 	text-align: center;
@@ -390,26 +387,31 @@ a {
 	text-shadow: 0 -2px 1px rgba(255, 255, 255, 0.3), 0 1px 2px rgba(0, 0, 0, 0.2);
 	border: 2px solid #9A3334;
 	border-radius: 10px;
-	margin-left: 20px;
+	margin-left: 120px;
 }
 .marketing p{
     width: 75%;
     min-height: 12%;
     font-size: 30px;
     color: #F3EFE0;
-    padding-left: 20px;
+    margin-left:120px;
+}
+.website p{
+	margin-left: 120px;
+	font-size: 30px;
+	width: 75%;
 }
 .marketing {
 	width: 100%;
     background: #9A3334;
 }
 .website {
-    width: 75%;
+    width: 100%;
     min-height: 12%;
     background: white;
     font-size: 30px;
-    padding: 20px;
     color: #9A3334;
+
 }
 .marketing strong {
 	font-size: 50px;
@@ -421,15 +423,17 @@ a {
 	padding-bottom: 50px;
 }
 .services-final {
-	font-size: 20px;
+	font-size: 40px;
 	width: 75%;
-	margin-left: 20px;
+	margin-left: 120px;
 }
 .services-cta {
-	font-size: 30px;
+	font-size: 50px;
 	width: 75%;
-	padding-bottom: 20px;
-	margin-left: 20px;
+	margin-left: 120px;
+	border: 2px solid #9A3334;
+	text-align:center;
+	border-radius: 10px;
 }
 
 /*-----------------------------Blog page-------------------------*/
@@ -477,9 +481,13 @@ a {
 	font-size: 20px;
 }
 @media only screen and (max-width: 1100px){
-	.articleimg {width:95%;}
+	.articleimg {width: 120%; height:auto;}
 	.bloglinks {display:none;}
-	.mainarticle{margin-left:2px;padding-right:100px;width:90%;font-size: 30px;}
+	.mainarticle{margin-left:2px;padding-right:100px;width:90%;font-size: 50px;}
+	.articletitle{font-size:70px;}
+	.articlesocialshare {margin-left: 10px;}
+	.articlecta p{font-size: 50px;}
+	.articlecta p a{font-size: 50px;}
 }
 
 .articlequote {
@@ -500,9 +508,10 @@ a {
 	padding-bottom: 100px;
 	font-size: 30px;
 }
-@media only screen and (max-width:1100px){
-	.articlecta {padding-bottom: 100px;
-	}
+.articlecta-contact a{
+	border: 2px solid #474747;
+	border-radius: 10px;
+	padding: 1px 4px;
 }
 /*----------------------------Blog 2----------------------------*/
 .selfie-pic {
