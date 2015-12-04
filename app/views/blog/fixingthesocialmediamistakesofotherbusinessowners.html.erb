@@ -39,9 +39,13 @@
 <body class="blog">
 	<% cache(action_suffix: "blog") do %>
 	<div class="bloglinks">
+		<a href="pages/blog"><strong>Article Directory</strong></a>
+		<br>
+		<br>
 		<strong>Other Great Articles:</strong>
-		<p><a href="/pages/blog">Knowing Your Strengths Gives You a Competitive Advantage</a></p>
-		<p><%= link_to "Timeless Lessons for Businesses Big and Small", :controller => "blog", :action =>"lessonsfromsamwalton" %></p>
+		<p><a href="/blog/knowingyourstrengthsgivesyouacompetitiveadvantage">Knowing Your Strengths Gives You a Competitive Advantage</a></p>
+		<p><a href="/blog/customerserviceisathingofthepresent">Customer Service is a Thing of the Present</a></p>
+		<p><a href="/blog/lessonsfromsamwalton">Timeless Lessons for Businesses Big and Small</a></p>
 	</div>
 	<div class="mainarticle">
 		<div class="articletitle">
