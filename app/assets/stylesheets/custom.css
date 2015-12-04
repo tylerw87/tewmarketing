@@ -537,7 +537,7 @@ a {
 }
 @media only screen and (max-width: 1100px){
 	.blogmap-category{font-size:30px;}
-	.blogmap-category img{height:300px; width:500px;}
+	.blogmap-category img{height:300px; width:450px;}
 	}
 /*---------------------------Portfolio page----------------------*/
 .portfolio {

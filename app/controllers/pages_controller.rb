@@ -7,10 +7,6 @@ class PagesController < ApplicationController
 	end
 	def services
 	end
-	def blog
-	end
-	def blog2
-	end
 	def test
 	end
 end
