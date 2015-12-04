@@ -1,6 +1,9 @@
 Rails.application.routes.draw do
   get 'blog/lessonsfromsamwalton'
   get 'blog/assetsforsmallbusiness'
+  get 'blog/customerserviceisathingofthepresent'
+  get 'blog/knowingyourstrengthsgivesyouacompetitiveadvantage'
+  get 'blog/fixingthesocialmediamistakesofotherbusinessowners'
 
   get 'pages/test'
 

@@ -481,13 +481,14 @@ a {
 	font-size: 20px;
 }
 @media only screen and (max-width: 1100px){
-	.articleimg {width: 120%; height:auto;}
+	.articleimg {width: 100% !important; height:auto !important;}
 	.bloglinks {display:none;}
 	.mainarticle{margin-left:2px;padding-right:100px;width:90%;font-size: 50px;}
 	.articletitle{font-size:70px;}
 	.articlesocialshare {margin-left: 10px;}
 	.articlecta p{font-size: 50px;}
 	.articlecta p a{font-size: 50px;}
+	iframe {width:100% !important; height:600px;}
 }
 
 .articlequote {
@@ -518,6 +519,26 @@ a {
 	width: 625px;
 	height: auto;
 }
+.blogmap {
+	width:100%;
+	height: auto;
+	width: 100%;
+	font-family: 'Yanone Kaffeesatz', sans-serif;
+	padding-top: 80px;
+}
+.hr-width {width:400px;float:left;margin-top:-20px;}
+.blogmap-category {
+	width:50%;
+	float:left;
+}
+.blogmap-category img {
+	height: 200px;
+	width: 400px;
+}
+@media only screen and (max-width: 1100px){
+	.blogmap-category{font-size:30px;}
+	.blogmap-category img{height:300px; width:500px;}
+	}
 /*---------------------------Portfolio page----------------------*/
 .portfolio {
 	padding-top:200px;
