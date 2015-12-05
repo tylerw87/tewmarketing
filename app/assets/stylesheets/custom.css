@@ -158,7 +158,9 @@ body {
 }
 /*---------------------------Homepage----------------------------*/
 .home {
-	background-image: url(/assets/boston-skyline.png);
+	height:1100px;
+	width:1080px;
+	margin: 0 auto;
 }
 .home .bmenu {
 	display: none;
@@ -192,9 +194,10 @@ body {
 	font-size: 20px;
 	vertical-align: middle;
 	color: white;
-	opacity:.35;
+	opacity:.5;
 	position: relative;
 	margin-bottom:10px;
+	margin-left:10px;
 }
 .home-link-contact {
 	width: 300px;
@@ -203,9 +206,34 @@ body {
 	font-size: 20px;
 	vertical-align: middle;
 	color: white;
-	opacity:.35;
+	opacity:.5;
 	position: relative;
 	margin-bottom:10px;
+	margin-left:10px;
+}
+.home-link-services {
+	width: 300px;
+	height: 40px;
+	font-family: 'Yanone Kaffeesatz', sans-serif;
+	font-size: 20px;
+	vertical-align: middle;
+	color: white;
+	opacity:.5;
+	position: relative;
+	margin-bottom:10px;
+	margin-left:10px;
+}
+.home-link-blog {
+	width: 300px;
+	height: 40px;
+	font-family: 'Yanone Kaffeesatz', sans-serif;
+	font-size: 20px;
+	vertical-align: middle;
+	color: white;
+	opacity:.5;
+	position: relative;
+	margin-bottom:10px;
+	margin-left:10px;
 }
 .home-link-about:hover{
 	opacity:.75;
@@ -214,6 +242,18 @@ body {
 	cursor:pointer;
 }
 .home-link-contact:hover{
+	opacity:.75;
+	border-bottom: 1px solid white;
+	transform: scale(1.05);
+	cursor:pointer;
+}
+.home-link-services:hover{
+	opacity:.75;
+	border-bottom: 1px solid white;
+	transform: scale(1.05);
+	cursor:pointer;
+}
+.home-link-blog:hover{
 	opacity:.75;
 	border-bottom: 1px solid white;
 	transform: scale(1.05);
@@ -245,26 +285,34 @@ a {
 	position: absolute;
 	font-family: 'Yanone Kaffeesatz', sans-serif;
 	color:white;
-	width:700px;
+	width:500px;
+	height:530px;
 	font-size:25px;
-	margin-left:-5%;
+	margin-left:5px;
 	display:none;
-	border:1px solid white;
 	border-radius:50px;
 	margin-top:400px;
 	opacity:.8;
+	margin-top:350px;
+	box-shadow: 10px 10px 5px #888888;
+	background-color: black;
+	background-color: rgba(0,0,0,0.0);	
+}
+#home-item-about:hover {
+	transform:scale(1.01);
+	background-color: rgba(0,0,0,0.5);
 }
 #home-item-about h2 {
 	margin-bottom:-20px;
 	margin-top:-10px;
-	width:690px;
+	width:495px;
 	text-align:center;
 }
 #home-item-about p{
-	width:690px;
+	width:495px;
 	text-align:center;
 }
-#home-item-well {
+#home-item-contact {
 	position:absolute;
 	font-family: 'Yanone Kaffeesatz', sans-serif;
 	color:white;
@@ -272,16 +320,27 @@ a {
 	height:530px;
 	font-size:25px;
 	margin-top:350px;
-	margin-left:49%;
-	border:1px solid white;
+	margin-left:520px;
 	border-radius:50px;
 	font-size:15px;
 	opacity:.8;
 	text-align: center;
 	display:none;
+	box-shadow: 10px 10px 5px #888888;
+	background-color: black;
+	background-color: rgba(0,0,0,0.0);
 }
-#home-item-well h2{
+#home-item-contact:hover {
+	transform:scale(1.01);
+	background-color: rgba(0,0,0,0.5);
+}
+#home-item-contact h2{
 	margin-top:-10px;
+	width:485px;
+}
+#home-item-contact p {
+	width:485px;
+	margin-left:8px;
 }
 .form-group {
 	padding:5px;
@@ -299,7 +358,7 @@ a {
 	opacity:1;
 }
 #comments {
-	height:200px;
+	height:180px;
 }
 .btn {
 	opacity:.8;
@@ -312,6 +371,91 @@ a {
 .btn:hover{
 	opacity:1;
 	transform:scale (1.05);
+}
+#home-item-services{
+	position:absolute;
+	font-family: 'Yanone Kaffeesatz', sans-serif;
+	color:white;
+	width:360px;
+	height:350px;
+	margin-top:10px;
+	margin-left:300px;
+	border-radius:50px;
+	font-size:24px;
+	font-weight:lighter;
+	opacity:.8;
+	text-align: center;
+	display:none;
+	box-shadow: 10px 10px 5px #888888;
+	background-color: black;
+	background-color: rgba(0,0,0,0.0);	
+}
+#home-item-services a {
+	color:white;
+	opacity:1;
+}
+#home-item-services a:hover {
+	color:#FF8300;
+	opacity:.8;
+}
+#home-item-services:hover {
+	transform:scale(1.01);
+	background-color: rgba(0,0,0,0.5);
+}
+#home-item-blog{
+	position:absolute;
+	font-family: 'Yanone Kaffeesatz', sans-serif;
+	color:white;
+	width:330px;
+	height:350px;
+	margin-top:10px;
+	margin-left:680px;
+	border-radius:50px;
+	font-size:24px;
+	font-weight:lighter;
+	opacity:.8;
+	text-align: center;
+	display:none;
+	box-shadow: 10px 10px 5px #888888;
+	background-color: black;
+	background-color: rgba(0,0,0,0.0);	
+}
+#home-item-blog:hover{
+	transform:scale(1.01);
+}
+#home-item-blog img {
+	width: 300px;
+	height:200px;
+	border-radius:10px;
+	margin-left:5px;
+}
+#home-item-blog img:hover {
+	opacity:.25;
+}
+#home-item-blog a{
+	color:white;
+	opacity:1;
+}
+#home-item-blog a:hover{
+	color:#FF8300;
+}
+#home-item-blog div{
+	position:absolute;
+	height:200px;
+	width:301px;
+	margin-top:-206px;
+	margin-left:17px;
+	color:white;
+	opacity:0;
+	background:black;
+	border-radius:10px;
+}
+#home-item-blog div p{
+	vertical-align: middle;
+}
+#home-item-blog div:hover{
+	opacity:.8;
+	background-color: rgba(0,0,0,0.9);
 }
 /*---------------------------AboutPage-------------------------*/
 .aboutimage {

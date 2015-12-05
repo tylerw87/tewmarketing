@@ -13,8 +13,12 @@
       ga('send', 'pageview');
     </script>
     <!--Analytics end-->
+    <style>
+      .bmenu {display:none;}
+      </style>
 </head>
-<body class="home">
+<body background="/assets/boston-skyline.png">
+<div class="home">
 	<div class="home-item1">
 		<img src="/assets/TEW-marketing.png" class="homepic">
 	</div>
@@ -31,23 +35,18 @@
 //-->
 </script>
       <div class="home-link-about" onclick="toggle_visibility('home-item-about');">ABOUT</div>
-      <a href="/pages/services">
-          <div class="home-link">SERVICES</div>
-      </a>
-      <div class="home-link-contact" onclick="toggle_visibility('home-item-well');">CONTACT</div>
-
-      <a href="/pages/blog">
-          <div class="home-link">BLOG</div>
-      </a>
+      <div class="home-link-services" onclick="toggle_visibility('home-item-services');">SERVICES</div>
+      <div class="home-link-contact" onclick="toggle_visibility('home-item-contact');">CONTACT</div>
+      <div class="home-link-blog" onclick="toggle_visibility('home-item-blog');">BLOG</div>
   </div>
   <div id="home-item-about">
     <p><h2>Tyler</h2></p>
     <p><i> Owner, Creative Thinker, Consultant, Marketer, Programmer, Designer </i></p>
-    <p>BIO: Tyler is dedicated to a life of helping others by breaking down challenging barriers in marketing, business, and programming. After receiving a bachelors degree in Marketing from Bob Jones University in Greenville, SC, Tyler has specialized in marketing consulting with small to medium sized businesses. With the desire to always seek improvement, he learned programming during this time and is proficient in HTML, CSS, Javascript, jQuery, and Ruby. To provide the full, one-size-fits-all package, he has also gained design knowledge mostly in the realm of Adobe with Photoshop, InDesign, and Illustrator. Tyler also enjoys immersing himself and his clients in the world of social media to gain a larger community. In his spare time, he enjoys spending time with his wife and 2 young children, investing in the stock market, and playing fantasy sports. Originally from New Hampshire, he and his family now live in Annapolis, MD.</p>
+    <p>BIO: Tyler is dedicated to a life of helping others by breaking down challenging barriers in marketing, business, and programming. After receiving a bachelors degree in Marketing from Bob Jones University in Greenville, SC, Tyler has specialized in marketing consulting with small to medium sized businesses. He is also a self-taught programmer and designer. In his spare time, he enjoys spending time with his wife and 2 young children, investing in the stock market, and playing fantasy sports. Originally from New Hampshire, he and his family now live in Annapolis, MD.</p>
   </div>
-  <div id="home-item-well"> 
+  <div id="home-item-contact"> 
     <%= form_for @contact do |f| %>
-    <br>
+    <br><br>
     <h2>How Can We Help?<h2>
     <p>We are passionate about people and about marketing. With a family background in entrepreneurship, we know how hard you are working. Leverage our skills to help with the marketing, design, and website so you can focus your energy on your amazing business!</p>
       <div class="form-group">
@@ -63,6 +62,16 @@
     <% end %>
     <br>
   </div>
-
+  <div id="home-item-services">
+    <h2>What We Offer</h2>
+    <p>We can help you with a one time project such as determining a marketing strategy, building a website, or crafting a design, or we could also become a partner with you for a longer period of time updating, implementing, and analyzing your business and market.</p>
+    <p>See our <a href="/pages/services">Services Page</a> for more information!</p>
+  </div>
+  <div id="home-item-blog">
+    <br><br>
+    <a href="/blog/customerserviceisathingofthepresent"><img src="/assets/blog/happy-customer-service"><div><p><br><br>Customer Service is a Thing of the Present<p></div></a>
+    <a href="/pages/blog"><h3>See Other Recent Topics</h3></a>
+  </div>
+</div>
 </body>
 </html>
