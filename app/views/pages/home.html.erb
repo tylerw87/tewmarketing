@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <head>
 	<link type="text/css" href="custom.css" rel="stylesheet">
+  <script type="text/javascript" src="application.js"></script>
     <!--Google Analytics-->
     <script>
       (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
@@ -14,28 +15,54 @@
     <!--Analytics end-->
 </head>
 <body class="home">
-	<div>
-		<img src="/assets/TEWlogo1.png" class="homepic">
+	<div class="home-item1">
+		<img src="/assets/TEW-marketing.png" class="homepic">
 	</div>
-    <div class="home-container">
-        <div class="home-content">
-            <div class="home-bmenu">
-               <a href="/pages/about"> 
-                    <div class="home-link hvr-radial-out">About Us</div>
-                </a>
-                <a href="/pages/services">
-                    <div class="home-link hvr-radial-out">Services</div>
-                </a>
-                <a href="/contacts/new">
-                    <div class="home-link hvr-radial-out">Contact Us</div>
-                </a>
-                <a href="/pages/blog">
-                    <div class="home-link hvr-radial-out">Blog</div>
-                </a>
-            </div>
-        </div>
-    </div>
+  <div class="home-item2">
+    <script type="text/javascript">
+<!--
+    function toggle_visibility(id) {
+       var e = document.getElementById(id);
+       if(e.style.display == 'block')
+          e.style.display = 'none';
+       else
+          e.style.display = 'block';
+    }
+//-->
+</script>
+      <div class="home-link-about" onclick="toggle_visibility('home-item-about');">ABOUT</div>
+      <a href="/pages/services">
+          <div class="home-link">SERVICES</div>
+      </a>
+      <div class="home-link-contact" onclick="toggle_visibility('home-item-well');">CONTACT</div>
 
+      <a href="/pages/blog">
+          <div class="home-link">BLOG</div>
+      </a>
+  </div>
+  <div id="home-item-about">
+    <p><h2>Tyler</h2></p>
+    <p><i> Owner, Creative Thinker, Consultant, Marketer, Programmer, Designer </i></p>
+    <p>BIO: Tyler is dedicated to a life of helping others by breaking down challenging barriers in marketing, business, and programming. After receiving a bachelors degree in Marketing from Bob Jones University in Greenville, SC, Tyler has specialized in marketing consulting with small to medium sized businesses. With the desire to always seek improvement, he learned programming during this time and is proficient in HTML, CSS, Javascript, jQuery, and Ruby. To provide the full, one-size-fits-all package, he has also gained design knowledge mostly in the realm of Adobe with Photoshop, InDesign, and Illustrator. Tyler also enjoys immersing himself and his clients in the world of social media to gain a larger community. In his spare time, he enjoys spending time with his wife and 2 young children, investing in the stock market, and playing fantasy sports. Originally from New Hampshire, he and his family now live in Annapolis, MD.</p>
+  </div>
+  <div id="home-item-well"> 
+    <%= form_for @contact do |f| %>
+    <br>
+    <h2>How Can We Help?<h2>
+    <p>We are passionate about people and about marketing. With a family background in entrepreneurship, we know how hard you are working. Leverage our skills to help with the marketing, design, and website so you can focus your energy on your amazing business!</p>
+      <div class="form-group">
+        <%= f.text_field :name, :placeholder => "name", class: 'form-control' %>
+      </div>
+      <div class="form-group">
+        <%= f.email_field :email, :placeholder => "email", class: 'form-control' %>
+      </div>
+      <div class="form-group">
+        <%= f.text_area :comments, :placeholder => "comments", class: 'form-control', id: "comments" %>
+      </div>
+      <%= f.submit 'Submit', class: 'btn btn-default' %>
+    <% end %>
+    <br>
+  </div>
 
 </body>
 </html>
