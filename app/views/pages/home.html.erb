@@ -17,22 +17,66 @@
       .bmenu {display:none;}
       </style>
 </head>
-<body background="/assets/boston-skyline.png">
+<body background="/assets/boston-skyline.png" style="background-attachment:fixed;">
+
+
 <script>
 setTimeout(function() {
     $('#start').fadeOut('fast');
-}, 5000);
+}, 4000);
 </script>
+
+
 <div id="start">
-  <i class="fa fa-arrow-left fa-lg"></i>
+  <p>Helping You Take Your Business to the Next Level</p>
+  <hr>
 </div>
-<div class="home">
+
+
+<script>
+setTimeout(function() {
+    $('#home-link-about').fadeIn('slow');
+}, 4000);
+setTimeout(function() {
+    $('#home-link-services').fadeIn('slow');
+}, 4500);
+setTimeout(function() {
+    $('#home-link-contact').fadeIn('slow');
+}, 5000);
+setTimeout(function() {
+    $('#home-link-blog').fadeIn('slow');
+}, 5500);
+</script>
+<!--mobile version-->
+<script>
+setTimeout(function() {
+    $('#home-link-about2').fadeIn('slow');
+}, 4000);
+setTimeout(function() {
+    $('#home-link-services2').fadeIn('slow');
+}, 4500);
+setTimeout(function() {
+    $('#home-link-contact2').fadeIn('slow');
+}, 5000);
+setTimeout(function() {
+    $('#home-link-blog2').fadeIn('slow');
+}, 5500);
+</script>
+<!--end mobile version-->
+
+<div id="home">
 	<div class="home-item1">
 		<img src="/assets/TEW-marketing.png" class="homepic">
 	</div>
-  <div class="home-item2">
+
+
+<!--mobile nav menu -->
+<script>
+</script>
+<!--end-->
+
+
 <script type="text/javascript">
-<!--
     function toggle_visibility(id) {
        var e = document.getElementById(id);
        if(e.style.display == 'block')
@@ -40,13 +84,49 @@ setTimeout(function() {
        else
           e.style.display = 'block';
     }
-//-->
 </script>
-      <div class="home-link-about" onclick="toggle_visibility('home-item-about');">ABOUT</div>
-      <div class="home-link-services" onclick="toggle_visibility('home-item-services');">SERVICES</div>
-      <div class="home-link-contact" onclick="toggle_visibility('home-item-contact');">CONTACT</div>
-      <div class="home-link-blog" onclick="toggle_visibility('home-item-blog');">BLOG</div>
+
+
+  <div id="home-item2">
+      <div id="home-link-about" onclick="toggle_visibility('home-item-about');"><a href="#home-item-about" media="screen and (max-width:1100px)">ABOUT</a></div>
+      <div id="home-link-services" onclick="toggle_visibility('home-item-services');">SERVICES</div>
+      <div id="home-link-contact" onclick="toggle_visibility('home-item-contact');">CONTACT</div>
+      <div id="home-link-blog" onclick="toggle_visibility('home-item-blog');">BLOG</div>
   </div>
+  <!--nav for mobile-->
+   <div id="home-item3">
+      <a href="#home-item-about" id="home-link-about2">ABOUT</a>
+      <a id="home-link-services2" href="#home-item-services">SERVICES</a>
+      <a id="home-link-contact2" href="#home-item-contact">CONTACT</a>
+      <a id="home-link-blog2" href="#home-item-blog">BLOG</a>
+  </div> 
+  <!--end-->
+  <!--multiplesformobile-->
+<div id="home-item4">
+      <a href="#home-item-about" id="home-link-about3">ABOUT</a>
+      <a id="home-link-services3" href="#home-item-services">SERVICES</a>
+      <a id="home-link-contact3" href="#home-item-contact">CONTACT</a>
+      <a id="home-link-blog3" href="#home-item-blog">BLOG</a>
+  </div> 
+<div id="home-item5">
+      <a href="#home-item-about" id="home-link-about3">ABOUT</a>
+      <a id="home-link-services3" href="#home-item-services">SERVICES</a>
+      <a id="home-link-contact3" href="#home-item-contact">CONTACT</a>
+      <a id="home-link-blog3" href="#home-item-blog">BLOG</a>
+  </div> 
+<div id="home-item6">
+      <a href="#home-item-about" id="home-link-about3">ABOUT</a>
+      <a id="home-link-services3" href="#home-item-services">SERVICES</a>
+      <a id="home-link-contact3" href="#home-item-contact">CONTACT</a>
+      <a id="home-link-blog3" href="#home-item-blog">BLOG</a>
+  </div> 
+<div id="home-item7">
+      <a href="#home-item-about" id="home-link-about3">ABOUT</a>
+      <a id="home-link-services3" href="#home-item-services">SERVICES</a>
+      <a id="home-link-contact3" href="#home-item-contact">CONTACT</a>
+      <a id="home-link-blog3" href="#home-item-blog">BLOG</a>
+  </div> 
+  <!--multiplesend-->
   <div id="home-item-about">
     <p><h2>Tyler</h2></p>
     <p><i> Owner, Creative Thinker, Consultant, Marketer, Programmer, Designer </i></p>
@@ -66,7 +146,7 @@ setTimeout(function() {
       <div class="form-group">
         <%= f.text_area :comments, :placeholder => "comments", class: 'form-control', id: "comments" %>
       </div>
-      <%= f.submit 'Submit', class: 'btn btn-default' %>
+      <%= f.submit 'Submit', class: 'btn' %>
     <% end %>
     <br>
   </div>
@@ -77,7 +157,9 @@ setTimeout(function() {
   </div>
   <div id="home-item-blog">
     <br><br>
-    <a href="/blog/customerserviceisathingofthepresent"><img src="/assets/blog/happy-customer-service"><div><p><br><br>Customer Service is a Thing of the Present<p></div></a>
+    <a href="/blog/customerserviceisathingofthepresent"><img src="/assets/blog/happy-customer-service"><div><p><br><br>Customer Service is a Thing of the Present<p></div>
+      <p class="title">Customer Service is a Thing of the Present</p>
+    </a>
     <a href="/pages/blog"><h3>See Other Recent Topics</h3></a>
   </div>
 </div>
