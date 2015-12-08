@@ -500,7 +500,7 @@ a {
 	position:absolute;
 	color: white;
 	z-index:100;
-	margin-top:150px;
+	margin-top:250px;
 }
 #home-link-about2 {
 	width: 300px;
@@ -514,7 +514,7 @@ a {
 	margin-bottom:10px;
 	margin-left:10px;
 	display:none;
-	margin-left:110px;
+	margin-left:60px;
 	margin-top:160px;
 }
 #home-link-services2 {
@@ -529,7 +529,7 @@ a {
 	margin-bottom:10px;
 	margin-left:10px;
 	display:none;
-	margin-left:110px;
+	margin-left:60px;
 	margin-top:160px;
 }
 #home-link-contact2 {
@@ -544,7 +544,7 @@ a {
 	margin-bottom:10px;
 	margin-left:10px;
 	display:none;
-	margin-left:110px;
+	margin-left:60px;
 	margin-top:160px;
 }
 #home-link-blog2 {
@@ -559,7 +559,7 @@ a {
 	margin-bottom:10px;
 	margin-left:10px;
 	display:none;
-	margin-left:110px;
+	margin-left:60px;
 	margin-top:160px;
 }
 #home-item4 {
