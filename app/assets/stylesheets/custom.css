@@ -353,6 +353,14 @@ a {
 	background-color: black;
 	background-color: rgba(0,0,0,0.0);	
 }
+#home-item-about a {
+	color:white;
+	margin-left:12px;
+}
+#home-item-about a:hover {
+	color:#FF8300;
+	opacity:.8;
+}
 #home-item-about:hover {
 	transform:scale(1.01);
 	background-color: rgba(0,0,0,0.5);
