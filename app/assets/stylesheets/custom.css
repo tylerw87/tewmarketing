@@ -162,6 +162,11 @@ body {
 	width:1080px;
 	margin: 0 auto;
 }
+.homebody{
+	background-image: url(/assets/boston-skyline.png);
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+}
 #home .bmenu {
 	display: none;
 }
@@ -678,7 +683,7 @@ a {
 	#home-item5 {display:block;}
 	#home-item6 {display:block;}
 	#home-item7 {display:block;}
-	body.mobile-theme {background-attachment:fixed;}
+}
 @media only screen and (min-width:1100px){
 	#home-item3 {display:none;}
 }
