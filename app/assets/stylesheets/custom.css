@@ -1373,7 +1373,7 @@ a {
 	color:orange !important;
 }
 @media only screen and (max-width:1100px){
-	.churches {height:5000px;}
+	.churches {height:6000px;}
 	.churches-body .churches-logo {width:130px;height:auto;}
 	.churches-item3 {width:95%;}
 	.churches-item4 {width:95%;}
