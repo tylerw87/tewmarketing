@@ -1210,7 +1210,7 @@ a {
 }
 .churches-body .churches-logo{
 	position:fixed;
-	margin-top:1px;
+	margin-top:-100px;
 	z-index:100;
 	width:80px;
 	height:auto;
@@ -1382,5 +1382,33 @@ a {
 	.churches-item4 #comments {width:95%;font-size:35px;}
 	.churches-item5 {width:95%;margin-top:4820px;margin-left:10px;}
 	.churches-item5 .fa {padding-right:40px; font-size:3em;}
+	div#slider{margin-left:17% !important;}
 }
-
+@keyframes slidy {
+0% { left: 0%; }
+20% { left: 0%; }
+25% { left: -100%; }
+45% { left: -100%; }
+50% { left: -200%; }
+70% { left: -200%; }
+75% { left: -300%; }
+95% { left: -300%; }
+100% { left: -400%; }
+}
+div#slider { overflow: hidden; width: 600px; height: 398px; margin-top:100px; margin-bottom: -5px; margin-left: 20%; background-color: white;}
+div#slider figure img { width: 20%; float: left; }
+div#slider figure {
+	margin-top:50px; 
+  position: relative;
+  width: 500%;
+  margin: 0;
+  left: 0;
+  text-align: left;
+  font-size: 0;
+  animation: 30s slidy infinite;
+  margin-top:-2px; 
+}
+div#slider figure img {
+	width:600px;
+	height:400px;
+}
