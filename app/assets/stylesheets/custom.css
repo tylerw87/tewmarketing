@@ -1230,6 +1230,7 @@ a {
 	font-family: 'Poiret One', cursive;
 	font-size:40px;
 	float:left;
+	display:none;
 }
 .churches-item1 h2{
 	padding:10px;
@@ -1248,6 +1249,7 @@ a {
 	font-family: 'Poiret One', cursive;
 	font-size:30px;
 	float:left;
+	display:none;
 }
 .churches-item2 h2{
 	padding:10px;
@@ -1283,6 +1285,7 @@ a {
 	font-size:30px;
 	float:left;
 	text-align:center;
+	display:none;
 }
 .churches-item3 h2{
 	padding:10px;
@@ -1321,6 +1324,7 @@ a {
 	font-size:30px;
 	float:left;
 	margin-bottom:50px;
+	display:none;
 }
 .churches-item4 h2{
 	padding:10px;
@@ -1357,6 +1361,7 @@ a {
 	position:absolute;
 	margin-bottom:50px;
 	text-align:center;
+	display:none;
 }
 .churches-item5 h2{
 	padding:10px;
@@ -1380,22 +1385,23 @@ a {
 	.churches-item4 div {margin-left:20px;}
 	.churches-item4 .form-control {height:40px;font-size:35px; width:95%;}
 	.churches-item4 #comments {width:95%;font-size:35px;}
-	.churches-item5 {width:95%;margin-top:4820px;margin-left:10px;}
+	.churches-item5 {width:95%;margin-top:4350px;margin-left:10px;}
 	.churches-item5 .fa {padding-right:40px; font-size:3em;}
 	div#slider{margin-left:17% !important;}
 }
 @keyframes slidy {
 0% { left: 0%; }
-20% { left: 0%; }
-25% { left: -100%; }
-45% { left: -100%; }
-50% { left: -200%; }
-70% { left: -200%; }
-75% { left: -300%; }
-95% { left: -300%; }
-100% { left: -400%; }
+10% { left:0%; }
+18% { left: -100%; }
+28% { left: -100%; }
+36% { left: -200%; }
+46% { left: -200%; }
+54% { left: -300%; }
+64% { left: -300%; }
+72% { left: -400%; }
+82% { left: -400%; }
 }
-div#slider { overflow: hidden; width: 600px; height: 398px; margin-top:100px; margin-bottom: -5px; margin-left: 20%; background-color: white;}
+div#slider { display:none;overflow: hidden; width: 600px; height: 398px; margin-top:100px; margin-bottom: -5px; margin-left: 20%; background-color: white;}
 div#slider figure img { width: 20%; float: left; }
 div#slider figure {
 	margin-top:50px; 
@@ -1405,7 +1411,7 @@ div#slider figure {
   left: 0;
   text-align: left;
   font-size: 0;
-  animation: 30s slidy infinite;
+  animation: 20s slidy infinite;
   margin-top:-2px; 
 }
 div#slider figure img {
