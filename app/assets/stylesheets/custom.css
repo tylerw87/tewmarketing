@@ -1378,14 +1378,14 @@ a {
 	color:orange !important;
 }
 @media only screen and (max-width:1100px){
-	.churches {height:5250px;}
+	.churches {height:5175px;}
 	.churches-body .churches-logo {width:130px;height:auto;}
 	.churches-item3 {width:95%;}
 	.churches-item4 {width:95%;}
 	.churches-item4 div {margin-left:20px;}
 	.churches-item4 .form-control {height:40px;font-size:35px; width:95%;}
 	.churches-item4 #comments {width:95%;font-size:35px;}
-	.churches-item5 {width:95%;margin-top:4400px;margin-left:10px;}
+	.churches-item5 {width:95%;margin-top:4500px;margin-left:10px;}
 	.churches-item5 .fa {padding-right:40px; font-size:3em;}
 	div#slider{margin-left:17% !important;}
 }
