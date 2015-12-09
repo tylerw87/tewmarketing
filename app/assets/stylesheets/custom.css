@@ -202,18 +202,18 @@ body {
 }
 /* Move it (define the animation) */
 @-moz-keyframes scroll-left {
- 0%   { -moz-transform: translateX(35%); }
+ 0%   { -moz-transform: translateX(25%); }
  100% { -moz-transform: translateX(-100%); }
 }
 @-webkit-keyframes scroll-left {
- 0%   { -webkit-transform: translateX(35%); }
+ 0%   { -webkit-transform: translateX(25%); }
  100% { -webkit-transform: translateX(-100%); }
 }
 @keyframes scroll-left {
  0%   { 
- -moz-transform: translateX(35%); /* Browser bug fix */
- -webkit-transform: translateX(35%); /* Browser bug fix */
- transform: translateX(35%); 		
+ -moz-transform: translateX(25%); /* Browser bug fix */
+ -webkit-transform: translateX(25%); /* Browser bug fix */
+ transform: translateX(25%); 		
  }
  100% { 
  -moz-transform: translateX(-100%); /* Browser bug fix */
@@ -1069,6 +1069,7 @@ a {
 	font-size:80px;
 	text-align:center;
 	margin-top:200px;
+	margin-left:-100px;
 	font-family: 'Poiret One', cursive;
 	color: white;
 	text-shadow: 5px 5px 5px gray;
@@ -1110,6 +1111,7 @@ a {
 #churches-start2 {
 	display:none;
 	position:absolute;
+	margin-left:-100px;
 	font-size:80px;
 	text-align:center;
 	margin-top:200px;
@@ -1156,6 +1158,7 @@ a {
 	position:absolute;
 	font-size:80px;
 	text-align:center;
+	margin-left:-100px;	
 	margin-top:200px;
 	font-family: 'Poiret One', cursive;
 	color: white;
@@ -1200,6 +1203,7 @@ a {
 	position:absolute;
 	font-size:80px;
 	text-align:center;
+	margin-left:-100px;	
 	margin-top:200px;
 	font-family: 'Poiret One', cursive;
 	color: white;
@@ -1378,7 +1382,7 @@ a {
 	color:orange !important;
 }
 @media only screen and (max-width:1100px){
-	.churches {height:5175px;}
+	.churches {height:5175px;background: url(/assets/church-background.png) no-repeat center center fixed;}
 	.churches-body .churches-logo {width:130px;height:auto;}
 	.churches-item3 {width:95%;}
 	.churches-item4 {width:95%;}
