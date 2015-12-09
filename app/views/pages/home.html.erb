@@ -19,6 +19,7 @@
       </style>
 </head>
 <body class="homebody">
+  <% cache(action_suffix: "home") do %>
 
 
 <script>
@@ -165,5 +166,6 @@ setTimeout(function() {
     <a href="/pages/blog"><h3>See Other Recent Topics</h3></a>
   </div>
 </div>
+<% end %>
 </body>
 </html>
