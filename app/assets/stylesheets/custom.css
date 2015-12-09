@@ -1382,8 +1382,9 @@ a {
 	color:orange !important;
 }
 @media only screen and (max-width:1100px){
-	.churches {height:5175px;background: url(/assets/church-background.png) no-repeat center center fixed;}
+	.churches {height:5175px;}
 	.churches-body .churches-logo {width:130px;height:auto;}
+	#churches-start {margin-left:0;}
 	.churches-item3 {width:95%;}
 	.churches-item4 {width:95%;}
 	.churches-item4 div {margin-left:20px;}
