@@ -1071,7 +1071,7 @@ a {
 	margin-top:200px;
 	margin-left:-100px;
 	font-family: 'Poiret One', cursive;
-	color: white;
+	color: #474747;
 	text-shadow: 5px 5px 5px gray;
 }
 #churches-start2 p {
@@ -1116,7 +1116,7 @@ a {
 	text-align:center;
 	margin-top:200px;
 	font-family: 'Poiret One', cursive;
-	color: white;
+	color: #474747;
 	text-shadow: 5px 5px 5px gray;
 }
 #churches-start3 p {
@@ -1161,7 +1161,7 @@ a {
 	margin-left:-100px;	
 	margin-top:200px;
 	font-family: 'Poiret One', cursive;
-	color: white;
+	color: #474747;
 	text-shadow: 5px 5px 5px gray;
 }
 #churches-start4 p {
@@ -1206,7 +1206,7 @@ a {
 	margin-left:-100px;	
 	margin-top:200px;
 	font-family: 'Poiret One', cursive;
-	color: white;
+	color: #474747;
 	text-shadow: 5px 5px 5px gray;
 }
 .churches-body{
@@ -1382,7 +1382,7 @@ a {
 	color:orange !important;
 }
 @media only screen and (max-width:1100px){
-	.churches {height:5175px;}
+	.churches {height:5175px;background: url(/assets/brickwall.png);background-repeat:repeat;}
 	.churches-body .churches-logo {width:130px;height:auto;}
 	#churches-start {margin-left:0;}
 	.churches-item3 {width:95%;}
