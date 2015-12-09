@@ -25,7 +25,7 @@ class PagesController < ApplicationController
 	    body = params[:contact][:comments]
 	    ContactMailer.contact_email(name, email, body).deliver
 	    flash[:success] = 'Message sent.'
-	    redirect_to new_contact_path
+	    redirect_to root_path
 	  else
 	    flash[:danger] = 'Error occured, message has not been sent.'
 	    redirect_to new_contact_path
