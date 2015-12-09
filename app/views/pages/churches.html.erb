@@ -16,9 +16,31 @@
     <style>
     .bmenu li{display:none;}
     .bmenu {z-index:100;}
+    .bmenu img {margin-left:470px;margin-top:5px;}
     .sidebar {display:none;}    
       </style>
       <link href='https://fonts.googleapis.com/css?family=Poiret+One' rel='stylesheet' type='text/css'>
+  <%
+  meta title: "TEW Marketing for Churches",
+       description: "Offering Free Tools for Local Ministries",
+        keywords: %w()
+  %>
+  <%
+  meta og: {
+    image: "http://tewmarketing.com/assets/church-background.png",
+    title: "Offering Free Tools for Local Ministries",
+    description: "Know of a Church in need of a New Website? Our Desire is to Help Local Ministries by Offering Free Services to Better Reach their Communities"
+  }
+  %>
+  <!-- Twitter-->
+  <%
+  meta twitter: {
+    card: "summary",
+    site: "@tewmarketing",
+    title: "TEW Marketing for Churches",
+    description: "Offering Free Tools for Local Ministries."
+  }
+  %>      
 </head>
 <body class="churches">
   <!-- Beginning slides -->
@@ -77,11 +99,12 @@ setTimeout(function() {
 -->
 <!-- end beginning slides -->
   <div class="churches-body">
-    <img src="/assets/responsive-example.jpg">
+    <img src="/assets/TEW-ministries.png" class="churches-logo">
+    <img src="/assets/responsive-example.jpg" class="churches-slide">
     <div class="churches-item1">
       <h2>Mission:</h2>
       <hr> 
-      <p>To Create Free Website Building and Community Reaching Tools that will help Local Churches Reach their Communities with the Gospel of Jesus.</p>
+      <p>To Provide Free Website Building and Community Reaching Tools that will help Local Churches Reach their Communities with the Gospel of Jesus.</p>
       <br>
       <br>
     </div>
@@ -89,20 +112,6 @@ setTimeout(function() {
       <h2>How This Works:</h2> 
       <hr>
       <p>Answer: However it best serves you! We would like to get to know you and your ministry to be sure that we are providing the best services for you. Meeting with you would be ideal but if the distance is too great we can just converse remotely. If your current website just needs updating we could also help with that or perhaps you would just like a crash course in social media strategy. We would like to use our skills to encourage your ministry.</p>
-    </div>
-    <div class="churches-item3">
-      <h2>Testimony:</h2>
-      <hr> 
-      <p>Tyler was born in a Christian home and attended Trinity Christian School in Concord, NH from Kindergarten through high school. He then received a Bachelor's degree in Marketing from Bob Jones University in Greenville, SC in 2010. He, along with his wife, Elaine, and 2 young children live in Annapolis, MD. After being laid off, the Lord laid the desire on Tyler's heart to use his given talents in service to him by ministering to local churches. For now, the focus will be mainly on website creation but we pray that the Lord may grow this ministry.</p>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
     </div>
     <div class="churches-item2" id="possibilities">
       <h2>Possibilities:</h2> 
@@ -120,13 +129,19 @@ setTimeout(function() {
       <p>Login only pages</p>
       <p>Email Accounts</p>
     </div>
-    <div class="churches-item3">
+    <div class="churches-item2">
+      <h2>Testimony:</h2>
+      <hr> 
+      <p>Tyler was born in a Christian home and attended Trinity Christian School in Concord, NH from Kindergarten through high school. He then received a Bachelor's degree in Marketing from Bob Jones University in Greenville, SC in 2010. He, along with his wife, Elaine, and 2 young children live in Annapolis, MD. After being laid off, the Lord laid the desire on Tyler's heart to use his given talents in service to him by ministering to local churches. For now, the focus will be mainly on website creation but we pray that the Lord may grow this ministry.</p>
+    </div>
+    <div class="churches-item2">
       <h2>Example Site:</h2>
       <hr> 
       <p>See this site as simply one example of what we can offer.</p>
       <a href="http://yourchurch.herokuapp.com"><img src="/assets/church-website-example.png"></a>
+      <br><br>
     </div>
-    <div class="churches-item2">
+    <div class="churches-item3">
       <h2>Help Us To Serve:</h2> 
       <hr>
       <p>Please consider donating to this ministry to help us be able to continue offering these services.</p>
@@ -135,9 +150,47 @@ setTimeout(function() {
       <input type="hidden" name="hosted_button_id" value="K3KBZ43K3YBQ4">
       <input type="image" src="/assets/donate-button.png" class="donate-image" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
       </form>
-
-
-    </div>  
+    </div>
+    <div class="churches-item4"> 
+      <%= form_for @contact do |f| %>
+      <h2>Please Contact Us</h2>
+      <hr>
+      <p>Are you a church or do you know of one that could use our help? Please let us know below so we can help!</p>
+        <div class="form-group">
+          <%= f.text_field :name, :placeholder => "name", class: 'form-control' %>
+        </div>
+        <div class="form-group">
+          <%= f.email_field :email, :placeholder => "email", class: 'form-control' %>
+        </div>
+        <div class="form-group">
+          <%= f.text_area :comments, :placeholder => "comments", class: 'form-control', id: "comments" %>
+        </div>
+        <%= f.submit 'Submit', class: 'churches-submit' %>
+      <% end %>
+      <br><br>
+    </div>      
+    <div class="churches-item5">
+      <h2>Help Us to Spread the Word!</h2>
+      <hr>
+      <!-- Twitter -->
+      <a href="https://twitter.com/share?url=http%3A%2F%2Fwww.tewmarketing.com%2Fpages%2Fchurches" title="Share on Twitter" target="_blank"><i class="fa fa-twitter"></i></a>
+       <!-- Facebook -->
+      <a href="http://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fwww.tewmarketing.com%2Fpages%2Fchurches" title="Share on Facebook" target="_blank"><i class="fa fa-facebook"></i></a>
+      <!-- Google+ -->
+      <a href="https://plus.google.com/share?url=http%3A%2F%2Fwww.tewmarketing.com%2Fpages%2Fchurches" title="Share on Google+" target="_blank"><i class="fa fa-google-plus"></i></a>
+      <!-- StumbleUpon -->
+      <a href="http://www.stumbleupon.com/submit?url=http%3A%2F%2Fwww.tewmarketing.com%2Fpages%2Fchurches" title="Share on StumbleUpon" target="_blank" data-placement="top"><i class="fa fa-stumbleupon"></i></a>
+      <!-- LinkedIn --> 
+      <a href="http://www.linkedin.com/shareArticle?mini=true&amp;url=http://www.tewmarketing.com/pages/churches" title="Share on LinkedIn" target="_blank"><i class="fa fa-linkedin"></i></a> 
+          <!-- Pinterest -->
+        <a href="javascript:void((function()%7Bvar%20e=document.createElement('script');e.setAttribute('type','text/javascript');e.setAttribute('charset','UTF-8');e.setAttribute('src','http://assets.pinterest.com/js/pinmarklet.js?r='+Math.random()*99999999);document.body.appendChild(e)%7D)());">
+          <i class="fa fa-pinterest"></i></a>
+          <!-- Email -->
+        <a href="mailto:?Subject=TEW Marketing&amp;Body=I%20saw%20this%20and%20thought%20of%20you!%20 http://www.tewmarketing.com">
+          <i class="fa fa-envelope"></i>
+        </a>
+        <br><br>
+    </div>   
 
 
 
@@ -148,3 +201,5 @@ setTimeout(function() {
 
 </body>
 </html>
+
+

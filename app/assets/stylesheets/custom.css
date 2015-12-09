@@ -1028,7 +1028,7 @@ a {
 	background-size: 100% 100%;
 	background-repeat: no-repeat;
 	background-attachment: fixed;
-	height:3000px;
+	height:4700px;
 }
 #churches-start p {
  position: absolute;
@@ -1208,15 +1208,22 @@ a {
 .churches-body{
 	width:100%;
 }
-.churches-body img {
+.churches-body .churches-logo{
+	position:absolute;
+	margin-top:50px;
+	z-index:100;
+	width:150px;
+	height:auto;
+}
+.churches-body .churches-slide {
 	margin-top:80px;
-	margin-left:17%;
+	margin-left:19%;
 	height:400px;
 	width:600px;
 }
 .churches-item1{
 	margin-top:20px;
-	width:45%;
+	width:95%;
 	background-color:white;
 	opacity:.98;
 	font-family: 'Poiret One', cursive;
@@ -1233,8 +1240,7 @@ a {
 }
 .churches-item2{
 	margin-top:20px;
-	margin-left:10px;
-	width:45%;
+	width:95%;
 	background-color:white;
 	opacity:.98;
 	font-family: 'Poiret One', cursive;
@@ -1249,6 +1255,16 @@ a {
 	padding:10px;
 	text-align:center;
 }
+.churches-item2 img{
+	margin-top:-25px;
+	margin-left:28%;
+	width:450px;
+	height:300px;
+}
+.churches-item2 img:hover{
+	opacity:.8;
+	border:1px solid black;
+}
 .churches-body hr {
 	width:300px;
 }
@@ -1257,12 +1273,13 @@ a {
 }
 .churches-item3{
 	margin-top:20px;
-	width:45%;
+	width:47%;
 	background-color:white;
 	opacity:.98;
 	font-family: 'Poiret One', cursive;
 	font-size:30px;
 	float:left;
+	text-align:center;
 }
 .churches-item3 h2{
 	padding:10px;
@@ -1278,22 +1295,78 @@ a {
 	margin-top:-20px;
 	margin-bottom:50px;
 }
-.churches-item3 img:hover{
-	opacity:.6;
+.churches-item3 form{
+	margin-bottom:-100px;
 }
 .donate-image {
 	height:40px;
 	width:120px;
 	border:1px solid black;
 	border-radius:10px;
-	margin-left:170px;
 	margin-bottom:150px;
 }
 .donate-image:hover {
 	border:1px solid orange;
 }
-
-
-
+.churches-item4{
+	margin-top:20px;
+	margin-left:10px;
+	width:47%;
+	background-color:white;
+	opacity:.98;
+	font-family: 'Poiret One', cursive;
+	font-size:30px;
+	float:left;
+	margin-bottom:50px;
+}
+.churches-item4 h2{
+	padding:10px;
+	text-align:center;
+}
+.churches-item4 p{
+	padding:10px;
+	text-align:center;
+}
+.churches-submit{
+	margin-left:42%;
+}
+.churches-submit:hover{
+	border: 1px solid orange;
+	border-radius:5px;
+	background-color: white;
+}
+.churches-item4 .form-control{
+	border:1px solid black;
+}
+.churches-item4 #comments{
+	margin-top:6px;
+	width:478px;
+	height:180px;
+}
+.churches-item5{
+	margin-top:3610px;
+	width:506px;
+	background-color:white;
+	opacity:.98;
+	font-family: 'Poiret One', cursive;
+	font-size:30px;
+	position:absolute;
+	margin-bottom:50px;
+	text-align:center;
+}
+.churches-item5 h2{
+	padding:10px;
+	text-align:center;
+}
+.churches-item5 p{
+	padding:10px;
+	text-align:center;
+}
+.churches-item5 .fa{
+	color:black;
+}
+.churches-item5 .fa:hover{
+	color:orange !important;
+}
 
 

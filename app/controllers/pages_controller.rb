@@ -2,7 +2,7 @@ class PagesController < ApplicationController
 	def about
 	end
 	def home
-  	@contact = Contact.new		
+  		@contact = Contact.new		
 	end
 	def portfolio
 	end
@@ -11,7 +11,10 @@ class PagesController < ApplicationController
 	def test
 	end
 	def new
-  	@contact = Contact.new
+  		@contact = Contact.new
+	end
+	def churches
+		@contact = Contact.new	
 	end
 
 	def create
