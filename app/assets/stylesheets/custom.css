@@ -1423,3 +1423,63 @@ div#slider figure img {
 	width:600px;
 	height:400px;
 }
+/*----------------------------Resources----------------------------*/
+.resources-body{
+	width:100%;
+}
+.ebookdownload{
+	margin-top:100px;
+	width:35%;
+	border:1px solid black;
+	border-radius:10px;
+	font-family: 'Yanone Kaffeesatz', sans-serif;
+	font-size:25px;
+	float:left;
+	text-align:center;
+}
+.ebookdownload img {
+	height:200px;
+	width:auto;
+	padding:10px;
+}
+.resources-contact{
+	margin-top:80px;
+	margin-left:50px;
+	width:60%;
+	float:left;
+	font-family: 'Yanone Kaffeesatz', sans-serif;
+	font-size:18px;
+}
+.resources-contact p{
+	width:77%;
+}
+.resources-contact .form-control {
+	border:1px solid #474747;
+}
+.resources-contact .btn{
+	margin-left:33%;
+}
+.resources-contact .btn:hover{
+	color:orange;
+}
+.resources-links{
+	font-family: 'Yanone Kaffeesatz', sans-serif;
+	font-size:25px;
+	margin-top:600px;
+	margin-left:13%;
+	position:absolute;
+}
+@media only screen and (max-width:1100px){
+	.resources-body {height:2200px;}
+	.ebookdownload{font-size:35px;width:80%;margin-left:15px;}
+	.ebookdownload img{height:400px;width:auto;}
+	.ebookdownload a{font-size:3em;padding-left:20px;}
+	.resources-contact{font-size:35px;width:75%;}
+	.resources-contact p{width:100%;}
+	.resources-contact .form-control{width:100%;}
+	.resources-contact #comments{margin-top:10px;}
+	.resources-links{margin-top:2000px;margin-left:50px;font-size:35px;}
+
+}
+
+
